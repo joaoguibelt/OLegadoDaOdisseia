@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 718633681}
   - component: {fileID: 718633684}
   - component: {fileID: 718633685}
+  - component: {fileID: 718633686}
   m_Layer: 0
   m_Name: Odisseu
   m_TagString: Untagged
@@ -536,6 +537,20 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &718633686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718633680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1c88b362ea63e44a0572bbff12fe71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
+  velocity: 5
+  movement: {x: 0, y: 0}
 --- !u!1 &1014672541
 GameObject:
   m_ObjectHideFlags: 0
