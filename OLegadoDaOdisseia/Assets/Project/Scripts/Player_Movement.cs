@@ -8,6 +8,7 @@ public class Player_Movement : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce;
     public Rigidbody2D rigidBody;
+    public ChecagemChao groundChecker;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,7 +33,7 @@ public class Player_Movement : MonoBehaviour
     void jump() //funcao para pulo
     {
         // se a tecla space for apertada, altera o valor da velocidade linear do componente RigidBody usando new Vector2(x,y)
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && groundChecker.IsOnFloor)
             rigidBody.linearVelocity = (new Vector2(0, jumpForce));
     }
 }
