@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: 57252d89e5781d54b9d4801be9bf3a94, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 726ab141f1cea644f946279a32bf5ebb, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -536,12 +536,40 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3be4647a-bfd4-4c91-8cfe-209af203fec5
-    m_ActionName: 'Ataques/Cortante[/Keyboard/q]'
+      m_Calls:
+      - m_Target: {fileID: 718633686}
+        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a7d3ab0e-a9f8-49b7-a240-92873e9bd072
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 718633686}
+        m_TargetAssemblyTypeName: PlayerMoviment, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 08a2c822-f1a0-4c99-a4a5-4b3fbf045fc3
+    m_ActionName: 'Player/Jump[/Keyboard/c]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Ataques
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &718633686
@@ -556,10 +584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1c88b362ea63e44a0572bbff12fe71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
-  speed: 5
-  jumpForce: 5
-  rigidBody: {fileID: 718633684}
-  groundChecker: {fileID: 1887064676}
+  moveSpeed: 5
+  JumpForce: 3
+  rb: {fileID: 718633684}
 --- !u!114 &718633687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +594,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718633680}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80111c2e46568374b892b427b544cbaf, type: 3}
   m_Name: 
