@@ -11,6 +11,8 @@ public class PlayerMoviment : MonoBehaviour
     private float horizontalMoviment;
     public Rigidbody2D rb;
 
+    public ChecagemChao checagemChao;
+
     private void Awake()
     {
         //Obtém a referência do componente Rigidbody2D quando o jogo começa
@@ -31,7 +33,7 @@ public class PlayerMoviment : MonoBehaviour
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed & checagemChao.IsOnFloor)
         {
             rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
         }
