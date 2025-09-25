@@ -588,6 +588,7 @@ MonoBehaviour:
   JumpForce: 10
   isOnFloor: 1
   rb: {fileID: 718633684}
+  checagemChao: {fileID: 1887064676}
 --- !u!114 &718633687
 MonoBehaviour:
   m_ObjectHideFlags: 0
