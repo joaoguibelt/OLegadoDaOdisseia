@@ -31,7 +31,11 @@ public class AtaquesPlayer : MonoBehaviour
     {
         if (context.performed)
         {
-            animator.SetTrigger("Cortante");
+            if (Keyboard.current == null && !Keyboard.current.qKey.isPressed)
+            {
+                animator.SetTrigger("AtkCortante");
+            }
+
         }
         //StartCoroutine(AtaqueCortanteRoutine());
     }

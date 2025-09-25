@@ -25,7 +25,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Cortante",
+                    "name": "AtkCortante",
                     "type": "Button",
                     "id": "625c6ab0-1133-4d7e-8413-afd5d06abd61",
                     "expectedControlType": "",
@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Contudente",
+                    "name": "AtkContudente",
                     "type": "Button",
                     "id": "ec4bd65d-63f9-45c6-aab3-8dbb7342ac04",
                     "expectedControlType": "",
@@ -43,9 +43,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Perfurante",
+                    "name": "AtkPerfurante",
                     "type": "Button",
                     "id": "5491ccf9-1b68-47c6-8434-3b8e383d806b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DefCortante",
+                    "type": "Button",
+                    "id": "2fb6fd5d-86ce-4378-998a-aa95705947a4",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -137,7 +146,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Cortante",
+                    "action": "AtkCortante",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -148,7 +157,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Contudente",
+                    "action": "AtkContudente",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -159,7 +168,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Perfurante",
+                    "action": "AtkPerfurante",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0baaaafb-9c0f-4fba-92e1-164c88fe33b3",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DefCortante",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
