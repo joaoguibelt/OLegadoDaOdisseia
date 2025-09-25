@@ -585,8 +585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Movement
   moveSpeed: 5
-  JumpForce: 10
-  isOnFloor: 1
+  JumpForce: 3
   rb: {fileID: 718633684}
 --- !u!114 &718633687
 MonoBehaviour:
@@ -877,7 +876,7 @@ GameObject:
   - component: {fileID: 2081386663}
   m_Layer: 8
   m_Name: Chao
-  m_TagString: MainGround
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

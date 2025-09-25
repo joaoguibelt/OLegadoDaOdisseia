@@ -8,6 +8,7 @@ public class PlayerMoviment : MonoBehaviour
     public float moveSpeed = 5.0f;
     public float JumpForce = 3.0f;
 
+    private bool isOnFloor = true;
     private float horizontalMoviment;
     public Rigidbody2D rb;
 
@@ -31,9 +32,18 @@ public class PlayerMoviment : MonoBehaviour
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && isOnFloor)
         {
             rb.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+            isOnFloor = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "MainGround")
+        {
+            isOnFloor = true;
         }
     }
 }
