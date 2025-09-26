@@ -5,46 +5,70 @@ using UnityEngine.InputSystem;
 
 public class AtaquesPlayer : MonoBehaviour
 {
+
+    //animacao
     public Animator animator;
 
+    //hitbox
     public Transform AttackPoint;
     public float AttackRadius = 0.5f;
     public LayerMask AttackLayer;
 
-    private int tempoCortante = 1;
-    public GameObject ataqueCortante;
+    //tipo ataque
+    public int AttackType = 0;
+    // 1: cortante
+    // 2: contundente
+    // 3: perfurante
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-
-    }
-
-
-    public void AtacarCortante(InputAction.CallbackContext context)
+    public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            if (Keyboard.current == null && !Keyboard.current.qKey.isPressed)
-            {
-                animator.SetTrigger("AtkCortante");
-            }
+            animator.SetTrigger("AtkCortante");
+            AttackType = 1;
 
         }
-        //StartCoroutine(AtaqueCortanteRoutine());
     }
+
+    public void AttackContundente(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            animator.SetTrigger("AtkCortante");
+            AttackType = 2;
+
+        }
+    }
+
+    public void AttackPerfurante(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            animator.SetTrigger("AtkCortante");
+            AttackType = 3;
+
+        }
+    }
+
     public void CortanteRange()
     {
         Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
         if (collinfo)
         {
-            Debug.Log(collinfo.transform.name);
+
+            switch (AttackType)
+            {
+                case 1:
+                    Debug.Log("Cortante");
+                    break;
+                case 2:
+                    Debug.Log("Contundente");
+                    break;
+                case 3:
+                    Debug.Log("Perfurante");
+                    break;
+
+            }
         }
     }
     private void OnDrawGizmosSelected()
@@ -54,11 +78,4 @@ public class AtaquesPlayer : MonoBehaviour
         Gizmos.DrawWireSphere(AttackPoint.position, AttackRadius);
 
     }
-
-    // public IEnumerator AtaqueCortanteRoutine()
-    // {
-    //     ataqueCortante.SetActive(true);
-    //     yield return new WaitForSeconds(tempoCortante);
-    //     ataqueCortante.SetActive(false);
-    //}
 }
