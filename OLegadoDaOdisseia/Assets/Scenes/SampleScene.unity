@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 16582980}
   - component: {fileID: 16582985}
   - component: {fileID: 16582984}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Odisseu
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -384,8 +384,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -400986627
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ae297123f091bbf4e8f1835eb98fb293, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -453,8 +453,9 @@ MonoBehaviour:
   AttackRadius: 1
   AttackLayer:
     serializedVersion: 2
-    m_Bits: 256
-  AttackType: 0
+    m_Bits: 128
+  currentAttackType: 0
+  maxHealth: 10
 --- !u!1 &36376921
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,7 +833,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000b17017dcfd6d19e823830ce9
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -891,7 +892,7 @@ GameObject:
   - component: {fileID: 1014672542}
   m_Layer: 8
   m_Name: Fundo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,8 +941,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -602443599
+  m_SortingLayer: 1
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.33962262, g: 0.26432893, b: 0.26432893, a: 1}
@@ -963,7 +964,7 @@ Transform:
   m_GameObject: {fileID: 1014672541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.03, z: 0}
   m_LocalScale: {x: 17, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -985,9 +986,9 @@ GameObject:
   - component: {fileID: 1163557028}
   - component: {fileID: 1163557027}
   - component: {fileID: 1163557026}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1031,8 +1032,9 @@ MonoBehaviour:
   AttackRadius: 1
   AttackLayer:
     serializedVersion: 2
-    m_Bits: 128
-  AttackType: 0
+    m_Bits: 64
+  currentAttackType: 0
+  maxHealth: 10
 --- !u!114 &1163557028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,8 +1277,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -400986627
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ae297123f091bbf4e8f1835eb98fb293, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1475,8 +1477,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -385055965
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.4433962, g: 0.4341509, b: 0.28235137, a: 1}

@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 
 
-public class AtaquesPlayer : MonoBehaviour
+public class PlayerAttack : MonoBehaviour
 {
 
     //animacao
@@ -15,18 +15,21 @@ public class AtaquesPlayer : MonoBehaviour
     public LayerMask AttackLayer;
 
     //tipo ataque
-    public int AttackType = 0;
-    // 1: cortante
-    // 2: contundente
-    // 3: perfurante
+    public AttackType currentAttackType = AttackType.None;
+    //vida
+    public int maxHealth = 10;
+
+
+
+
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
+            //roda animacao e seleciona o attacktype
             animator.SetTrigger("AtkCortante");
-            AttackType = 1;
-
+            currentAttackType = AttackType.Cortante;
         }
     }
 
@@ -35,8 +38,7 @@ public class AtaquesPlayer : MonoBehaviour
         if (context.performed)
         {
             animator.SetTrigger("AtkCortante");
-            AttackType = 2;
-
+            currentAttackType = AttackType.Contundente;
         }
     }
 
@@ -45,8 +47,7 @@ public class AtaquesPlayer : MonoBehaviour
         if (context.performed)
         {
             animator.SetTrigger("AtkCortante");
-            AttackType = 3;
-
+            currentAttackType = AttackType.Perfurante;
         }
     }
 
@@ -55,23 +56,87 @@ public class AtaquesPlayer : MonoBehaviour
         Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
         if (collinfo)
         {
-
-            switch (AttackType)
-            {
-                case 1:
-                    Debug.Log("Cortante");
-                    break;
-                case 2:
-                    Debug.Log("Contundente");
-                    break;
-                case 3:
-                    Debug.Log("Perfurante");
-                    break;
-
-            }
+            //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
+            // o parametro do tipo de ataque dado e do dano
+            collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
         }
     }
-    private void OnDrawGizmosSelected()
+
+    public void EndAttack()
+    {
+        //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
+        currentAttackType = AttackType.None;
+    }
+
+
+
+
+
+
+    private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
+    //checagens de condicoes de vitoria (1) empate (0) e derrota (-1)
+
+    {
+        if (myAttack == opponentattack)
+        {
+            return 0;
+        }
+
+        if (myAttack != AttackType.None && opponentattack == AttackType.None)
+        {
+            return 1;
+        }
+        if (myAttack == AttackType.Contundente && opponentattack == AttackType.Cortante)
+        {
+            return 1;
+        }
+        if (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
+        {
+            return 1;
+        }
+        if (myAttack == AttackType.Perfurante && opponentattack == AttackType.Contundente)
+        {
+            return 1;
+        }
+
+        //caso nao entre em nenhuma condicao de vitoria, entao considera derrota
+        return -1;
+    }
+
+    public void TakeDamage(AttackType opponentattack, int damage)
+    {
+        //se a vida for igual ou menor que 0, nao continua a funcao e printa Player Died
+        if (maxHealth <= 0)
+        {
+            Debug.Log("Player Died");
+            return;
+        }
+
+        //TENTATIVA de ver se foi sem defesa (funciona mas ai printa aqui e printa no switch case tb)
+        // if (currentAttackType == AttackType.None)
+        // {
+        //     Debug.Log("SEM DEFESA  " + "Oponente usou  " + opponentattack);
+        //     maxHealth -= damage;
+        // }
+
+        switch (MyAttackWins(currentAttackType, opponentattack)) //dependendo do return da funcao MyAttackWins
+        {
+            case 1:
+                Debug.Log("GANHEI  " + gameObject.name + "  usou  " + currentAttackType + "  que GANHA de  " + opponentattack);
+                //se eu ganho, entao nao tomo dano, finaliza a funcao
+                return;
+            case 0:
+                Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
+                return;
+            case -1:
+                Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);
+                //perdi, logo toma dano
+                maxHealth -= damage;
+                break;
+        }
+    }
+
+    private void OnDrawGizmosSelected() //desenha uma circunferencia com a mesma hitbox do ataque (apenas pra ajuste mais facil)
     {
         if (AttackPoint == null) return;
         Gizmos.color = Color.yellow;
