@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-
     //animacao
     public Animator animator;
 
@@ -20,9 +19,6 @@ public class PlayerAttack : MonoBehaviour
     public int maxHealth = 10;
 
 
-
-
-
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -32,7 +28,6 @@ public class PlayerAttack : MonoBehaviour
             currentAttackType = AttackType.Cortante;
         }
     }
-
     public void AttackContundente(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -41,7 +36,6 @@ public class PlayerAttack : MonoBehaviour
             currentAttackType = AttackType.Contundente;
         }
     }
-
     public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -68,36 +62,19 @@ public class PlayerAttack : MonoBehaviour
         currentAttackType = AttackType.None;
     }
 
-
-
-
-
-
-    private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
+    private int MyAttackWins(AttackType myAttack, AttackType opponentattack){
     //checagens de condicoes de vitoria (1) empate (0) e derrota (-1)
-
-    {
+    
         if (myAttack == opponentattack)
-        {
             return 0;
-        }
 
-        if (myAttack != AttackType.None && opponentattack == AttackType.None)
-        {
+        if (
+           (myAttack != AttackType.None && opponentattack == AttackType.None)
+        || (myAttack == AttackType.Contundente && opponentattack == AttackType.Cortante)
+        || (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
+        || (myAttack == AttackType.Perfurante && opponentattack == AttackType.Contundente)
+        )
             return 1;
-        }
-        if (myAttack == AttackType.Contundente && opponentattack == AttackType.Cortante)
-        {
-            return 1;
-        }
-        if (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
-        {
-            return 1;
-        }
-        if (myAttack == AttackType.Perfurante && opponentattack == AttackType.Contundente)
-        {
-            return 1;
-        }
 
         //caso nao entre em nenhuma condicao de vitoria, entao considera derrota
         return -1;
