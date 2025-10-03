@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public enum AttackType
 {
     None,
-    Contundente,
+    Distancia,
     Cortante,
     Perfurante
 }

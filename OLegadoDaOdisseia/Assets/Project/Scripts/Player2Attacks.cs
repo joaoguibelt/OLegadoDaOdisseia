@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 
 
-public class PlayerAttack : MonoBehaviour
+public class Player2Attack : MonoBehaviour
 {
     //animacao
     public Animator animator;
@@ -58,7 +58,7 @@ public class PlayerAttack : MonoBehaviour
     public void CortanteRange()
     {
         Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
-        if (collinfo.gameObject.tag == "Player2")
+        if (collinfo.gameObject.tag == "Player")
         {
             //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
             // o parametro do tipo de ataque dado e do dano
