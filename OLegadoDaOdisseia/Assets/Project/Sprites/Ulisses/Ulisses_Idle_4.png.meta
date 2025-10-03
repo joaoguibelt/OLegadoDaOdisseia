@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 6837a72cbb8ff354ba8144f92437495a
+guid: 07bf605ceb5184e468bdd69d2ea194d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8113284438337910
-    second: ULISSES IDLE_0
-  - first:
-      213: 7712445371811235763
-    second: ULISSES IDLE_1
-  - first:
-      213: 3183240681533707259
-    second: ULISSES IDLE_2
+      213: -1472501803030139128
+    second: Ulisses_Idle_4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,67 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ULISSES IDLE_0
+      name: Ulisses_Idle_4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 449
+        width: 258
+        height: 453
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 679a8ec3df2dc1000800000000000000
-      internalID: 8113284438337910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ULISSES IDLE_1
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 0
-        width: 257
-        height: 449
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b70a60143c180b60800000000000000
-      internalID: 7712445371811235763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ULISSES IDLE_2
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 0
-        width: 256
-        height: 452
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf39369c8842d2c20800000000000000
-      internalID: 3183240681533707259
+      spriteID: 80f244b696f909be0800000000000000
+      internalID: -1472501803030139128
       vertices: []
       indices: 
       edges: []
@@ -175,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5d114c6b41485ca419bb09a1ee870923
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ULISSES IDLE_0: 8113284438337910
-      ULISSES IDLE_1: 7712445371811235763
-      ULISSES IDLE_2: 3183240681533707259
+      Ulisses_Idle_4_0: -1472501803030139128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
