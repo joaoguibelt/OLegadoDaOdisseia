@@ -3,23 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
-    [SerializeField] private string Level;
-    [SerializeField] private GameObject MenuInicial;
-    [SerializeField] private GameObject PainelOpcoes;
+    public string Level;
+    public GameObject MenuInicial;
+    public GameObject PainelOpcoes;
+    public GameObject Menu;
+    public GameObject Pause;
 
-    public void jogar() {
+    public void muda_cena()
+    {
         SceneManager.LoadScene(Level);
     }
-    public void abrir_opcoes() {
-        MenuInicial.SetActive(false);
-        PainelOpcoes.SetActive(true);
-    }
-    public void fechar_opcoes() {
-        MenuInicial.SetActive(true);
-        PainelOpcoes.SetActive(false);
-    }
-    public void fechar_jogo() {
-        Debug.Log("Sair do Jogo");
+    public void fechar_jogo()
+    {
         Application.Quit();
     }
 }
