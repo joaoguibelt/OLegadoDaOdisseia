@@ -453,7 +453,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 1
+        m_CallState: 2
     m_ActionId: c8aafd14-ce5f-486a-89a3-5c2ce7ad7525
     m_ActionName: 'Player/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -2276,10 +2276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipalManager
   Level: Menu
-  MenuInicial: {fileID: 0}
-  PainelOpcoes: {fileID: 0}
-  Menu: {fileID: 0}
-  Pause: {fileID: 0}
+  Pause: {fileID: 9687448}
 --- !u!4 &1010394007
 Transform:
   m_ObjectHideFlags: 0

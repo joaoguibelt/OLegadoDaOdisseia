@@ -4,11 +4,19 @@ using UnityEngine.SceneManagement;
 public class MenuPrincipalManager : MonoBehaviour
 {
     public string Level;
-    public GameObject MenuInicial;
-    public GameObject PainelOpcoes;
-    public GameObject Menu;
     public GameObject Pause;
 
+    void Update()
+    {
+        if (Pause.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
     public void muda_cena()
     {
         SceneManager.LoadScene(Level);
