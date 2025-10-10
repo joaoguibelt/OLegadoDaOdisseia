@@ -1325,7 +1325,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 34
+  field of view: 63
   orthographic: 1
   orthographic size: 5
   m_Depth: -1
@@ -2302,6 +2302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014672543}
   - component: {fileID: 1014672542}
+  - component: {fileID: 1014672544}
   m_Layer: 8
   m_Name: Fundo
   m_TagString: Player
@@ -2377,11 +2378,24 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0002, y: 0.0515, z: 0}
-  m_LocalScale: {x: 19.976582, y: 10.08399, z: 10}
+  m_LocalScale: {x: 19.810196, y: 10, z: 9.91671}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014672544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014672541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f03538329594143992e33b7d4a4acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rescale
+  item: 
 --- !u!1 &1106642623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +3954,7 @@ GameObject:
   - component: {fileID: 2081386665}
   - component: {fileID: 2081386664}
   - component: {fileID: 2081386663}
+  - component: {fileID: 2081386666}
   m_Layer: 8
   m_Name: Chao
   m_TagString: MainGround
@@ -4066,6 +4081,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081386666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081386662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f03538329594143992e33b7d4a4acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Rescale
+  item: Chao
 --- !u!1 &2113117723
 GameObject:
   m_ObjectHideFlags: 0
