@@ -29,7 +29,7 @@ public class PlayerAttack : MonoBehaviour
         if (context.performed)
         {
             //roda animacao e seleciona o attacktype
-            animator.SetTrigger("AtkCortante");
+            animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
         }
     }
@@ -37,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (context.performed)
         {
-            animator.SetTrigger("AtkCortante");
+            animator.SetTrigger("AtkContundente");
             currentAttackType = AttackType.Distancia;
         }
     }

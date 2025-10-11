@@ -106,12 +106,12 @@ TextureImporter:
       name: Ulisses_run_7_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
         width: 235
-        height: 441
+        height: 506
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: Ulisses_run_7_1
       rect:
         serializedVersion: 2
-        x: 246
+        x: 242
         y: 358
         width: 9
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 18c804b09df0a1645899c2af921b2aff
     internalID: 0
     vertices: []
     indices: 

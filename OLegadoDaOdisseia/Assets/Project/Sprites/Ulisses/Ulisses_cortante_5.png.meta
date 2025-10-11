@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 9deee828b80353c44bbdde98b594ab4f
+guid: eef5c52d5dd7e4a4ea166be1eaf4e949
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2430572638389044768
-    second: Ulisses_run_14_0
+      213: 7740952239810321076
+    second: Ulisses_cortante_5_0
+  - first:
+      213: -3602047547187366859
+    second: Ulisses_cortante_5_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ulisses_run_14_0
+      name: Ulisses_cortante_5_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 2
         y: 0
-        width: 383
-        height: 441
+        width: 758
+        height: 506
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02686f7dfe02bb120800000000000000
-      internalID: 2430572638389044768
+      spriteID: 4ba982d7c036d6b60800000000000000
+      internalID: 7740952239810321076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ulisses_cortante_5_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 494
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53474dd17d4f20ec0800000000000000
+      internalID: -3602047547187366859
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: afca45f9b2846a1459caf2900ce6ada2
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ulisses_run_14_0: 2430572638389044768
+      Ulisses_cortante_5_0: 7740952239810321076
+      Ulisses_cortante_5_1: -3602047547187366859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

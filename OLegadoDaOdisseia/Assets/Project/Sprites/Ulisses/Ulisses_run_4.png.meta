@@ -103,9 +103,9 @@ TextureImporter:
       name: Ulisses_run_4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 320
+        width: 321
         height: 444
       alignment: 0
       pivot: {x: 0, y: 0}

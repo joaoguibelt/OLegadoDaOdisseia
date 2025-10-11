@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: fbb1bc02b46a62c4a97165bd94d02045
+guid: ea04a90d2bb2e8d44b640b5ce7054b01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1998902293455326747
-    second: Ulisses_run_9_0
-  - first:
-      213: -2136309911175121488
-    second: Ulisses_run_9_1
+      213: 276101072613215871
+    second: Ulisses_cortante_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ulisses_run_9_0
+      name: Ulisses_cortante_2_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 235
-        height: 441
+        width: 479
+        height: 506
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1e4e169b078dbb10800000000000000
-      internalID: 1998902293455326747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ulisses_run_9_1
-      rect:
-        serializedVersion: 2
-        x: 246
-        y: 358
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b5b246547d4a52e0800000000000000
-      internalID: -2136309911175121488
+      spriteID: f7e07337678e4d300800000000000000
+      internalID: 276101072613215871
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1db34e67a6f9c8c4aac09eb178322ed8
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ulisses_run_9_0: 1998902293455326747
-      Ulisses_run_9_1: -2136309911175121488
+      Ulisses_cortante_2_0: 276101072613215871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
