@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,11 +12,16 @@ public class PlayerMoviment : MonoBehaviour
     private bool isOnFloor = true;
     private float horizontalMoviment;
     public Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private int movendoHash = Animator.StringToHash("movendo");
 
     private void Awake()
     {
         //Obtém a referência do componente Rigidbody2D quando o jogo começa
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -28,7 +34,15 @@ public class PlayerMoviment : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         horizontalMoviment = context.ReadValue<Vector2>().x;
-
+        animator.SetBool(movendoHash, horizontalMoviment != 0);
+        if (horizontalMoviment < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else
+        {
+            spriteRenderer.flipX = true;
+        }
     }
     public void OnJump(InputAction.CallbackContext context)
     {
