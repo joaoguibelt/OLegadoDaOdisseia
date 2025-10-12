@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour
 
     //hitbox
     public Transform AttackPoint;
-    public float AttackRadius = 0.5f;
+    public float AttackRadius = 1.55f;
     public LayerMask AttackLayer;
 
     //tipo ataque
@@ -33,6 +33,7 @@ public class PlayerAttack : MonoBehaviour
             currentAttackType = AttackType.Cortante;
         }
     }
+    /*
     public void AttackContundente(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -41,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
             currentAttackType = AttackType.Distancia;
         }
     }
+    */
     public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -57,12 +59,18 @@ public class PlayerAttack : MonoBehaviour
 
     public void CortanteRange()
     {
+        
         Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
-        if (collinfo.gameObject.tag == "Player2")
+        if (collinfo != null && collinfo.gameObject.tag == "Player2")
         {
+            Debug.Log("Cortei o ciclope");
             //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
             // o parametro do tipo de ataque dado e do dano
             collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
+        }
+        else if(collinfo != null)
+        {
+   Debug.Log("Bati de bobo");         
         }
     }
 

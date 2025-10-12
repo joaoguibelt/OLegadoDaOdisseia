@@ -29,10 +29,11 @@ public class Player2Attack : MonoBehaviour
         if (context.performed)
         {
             //roda animacao e seleciona o attacktype
-            animator.SetTrigger("AtkCortante");
+            //animator.SetTrigger("AtkCortante");
             currentAttackType = AttackType.Cortante;
         }
     }
+    /*
     public void AttackContundente(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -41,6 +42,7 @@ public class Player2Attack : MonoBehaviour
             currentAttackType = AttackType.Distancia;
         }
     }
+    */
     public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)

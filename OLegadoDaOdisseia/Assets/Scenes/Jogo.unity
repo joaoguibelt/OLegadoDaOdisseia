@@ -572,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AtaquesPlayer
   animator: {fileID: 16582984}
   AttackPoint: {fileID: 1467880068}
-  AttackRadius: 1
+  AttackRadius: 1.33
   AttackLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -2557,6 +2557,7 @@ GameObject:
   - component: {fileID: 1163557028}
   - component: {fileID: 1163557027}
   - component: {fileID: 1163557026}
+  - component: {fileID: 1163557034}
   m_Layer: 6
   m_Name: Player 2
   m_TagString: Player2
@@ -2593,7 +2594,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163557025}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80111c2e46568374b892b427b544cbaf, type: 3}
   m_Name: 
@@ -2881,6 +2882,28 @@ Transform:
   - {fileID: 1337820341}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163557034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163557025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2683fc291199ead48ac8e9c07cc3d09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player2Attack
+  animator: {fileID: 0}
+  AttackPoint: {fileID: 0}
+  AttackRadius: 0.5
+  AttackLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  currentAttackType: 0
+  maxHealth: 10
+  projectilePrefab: {fileID: 0}
+  projectilePoint: {fileID: 0}
 --- !u!1 &1305474387
 GameObject:
   m_ObjectHideFlags: 0
