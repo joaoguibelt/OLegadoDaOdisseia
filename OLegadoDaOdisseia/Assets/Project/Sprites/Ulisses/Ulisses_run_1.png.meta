@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 1509969149178425264
     second: Ulisses_run_1_0
+  - first:
+      213: -7282102696946688838
+    second: Ulisses_run_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,9 +106,9 @@ TextureImporter:
       name: Ulisses_run_1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 291
+        width: 235
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -121,11 +124,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ulisses_run_1_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 358
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc149aed26c0fa90800000000000000
+      internalID: -7282102696946688838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 25a89a37c40c87a4f9cf38c9a84eee5b
+    spriteID: 4250528e80ae0a343a12e0dbf53a44c6
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ulisses_run_1_0: 1509969149178425264
+      Ulisses_run_1_1: -7282102696946688838
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
