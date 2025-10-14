@@ -103,9 +103,9 @@ TextureImporter:
       name: Ulisses_run_2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 383
+        width: 276
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1d84bac49a11af647afc089d03347cd1
+    spriteID: 483c01525bea94e40b9dacae3f3ddb4e
     internalID: 0
     vertices: []
     indices: 
