@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6ab1a7bd1fb6e0f40886a707f8a0d3bb
+guid: 090ca65c97c1ba84a808b21c6a631f19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1317644297529726312
-    second: Ulisses_cortante_8_0
+      213: -3143461163169609380
+    second: Ulisses_cortante_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ulisses_cortante_8_0
+      name: Ulisses_cortante_0_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89aeb691e79c6bde0800000000000000
-      internalID: -1317644297529726312
+      spriteID: c590a041abe2064d0800000000000000
+      internalID: -3143461163169609380
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6531c5f8569a3c74f91363542d5575f5
+    spriteID: 443443c9fff83af4cb2e6117c8ef194d
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ulisses_cortante_8_0: -1317644297529726312
+      Ulisses_cortante_0_0: -3143461163169609380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
