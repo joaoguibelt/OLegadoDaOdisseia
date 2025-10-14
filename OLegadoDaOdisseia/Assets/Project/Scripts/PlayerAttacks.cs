@@ -70,7 +70,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else if(collinfo != null)
         {
-   Debug.Log("Bati de bobo");         
+            Debug.Log("Bati de bobo");         
         }
     }
 
