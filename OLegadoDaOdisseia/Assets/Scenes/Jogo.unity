@@ -528,7 +528,7 @@ Transform:
   m_GameObject: {fileID: 16582977}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.08, y: 0.101, z: 0}
+  m_LocalPosition: {x: -0.99, y: 0.101, z: 0}
   m_LocalScale: {x: 0.4347919, y: 0.43479186, z: 0.4347919}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2555,7 +2555,6 @@ GameObject:
   - component: {fileID: 1163557030}
   - component: {fileID: 1163557029}
   - component: {fileID: 1163557028}
-  - component: {fileID: 1163557027}
   - component: {fileID: 1163557026}
   - component: {fileID: 1163557034}
   m_Layer: 6
@@ -2587,28 +2586,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1163557027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163557025}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80111c2e46568374b892b427b544cbaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AtaquesPlayer
-  animator: {fileID: 1163557026}
-  AttackPoint: {fileID: 1337820341}
-  AttackRadius: 1
-  AttackLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  currentAttackType: 0
-  maxHealth: 10
-  projectilePrefab: {fileID: 518196965862042402, guid: 1bbd76fef3c28664bbeb5404f1791feb, type: 3}
-  projectilePoint: {fileID: 1597420444}
 --- !u!114 &1163557028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,7 +2660,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/c]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1163557027}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AtaquesPlayer, Assembly-CSharp
         m_MethodName: AttackCortante
         m_Mode: 0
@@ -2699,7 +2676,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Cortante[/Keyboard/j]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1163557027}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AtaquesPlayer, Assembly-CSharp
         m_MethodName: AttackContundente
         m_Mode: 0
@@ -2715,7 +2692,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Contudente[/Keyboard/k]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1163557027}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AtaquesPlayer, Assembly-CSharp
         m_MethodName: AttackPerfurante
         m_Mode: 0
@@ -2795,17 +2772,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.019615412, y: -0.07929742}
+  m_Offset: {x: 1.8940415, y: 0.17547345}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.49, y: 5.06}
+    oldSize: {x: 9.879999, y: 6.6989856}
     newSize: {x: 2.49, y: 4.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.4731765, y: 4.898781}
+  m_Size: {x: 6.548236, y: 7.0233645}
   m_EdgeRadius: 0
 --- !u!212 &1163557032
 SpriteRenderer:
@@ -2854,7 +2831,7 @@ SpriteRenderer:
   m_SortingLayerID: -400986627
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7326218803092469622, guid: 7563f974e1798994f91e32c9034f90bf, type: 3}
+  m_Sprite: {fileID: -943728869789525408, guid: 0f7bfa13cacc6088f942d1dad2c0b6ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2874,7 +2851,7 @@ Transform:
   m_GameObject: {fileID: 1163557025}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.26, y: 0.073, z: 0}
+  m_LocalPosition: {x: 2.26, y: 0.398, z: 0}
   m_LocalScale: {x: 0.42054528, y: 0.42054528, z: 0.42054528}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2894,16 +2871,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2683fc291199ead48ac8e9c07cc3d09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player2Attack
-  animator: {fileID: 0}
-  AttackPoint: {fileID: 0}
+  animator: {fileID: 1163557026}
+  AttackPoint: {fileID: 1337820341}
   AttackRadius: 0.5
   AttackLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   currentAttackType: 0
   maxHealth: 10
-  projectilePrefab: {fileID: 0}
-  projectilePoint: {fileID: 0}
+  projectilePrefab: {fileID: 518196965862042402, guid: 1bbd76fef3c28664bbeb5404f1791feb, type: 3}
+  projectilePoint: {fileID: 1597420444}
 --- !u!1 &1305474387
 GameObject:
   m_ObjectHideFlags: 0

@@ -66,12 +66,15 @@ public class PlayerAttack : MonoBehaviour
             Debug.Log("Cortei o ciclope");
             //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
             // o parametro do tipo de ataque dado e do dano
+            Debug.Log(AttackPoint.position);
+            // Debug.Log(collinfo.gameObject.Transform.position);
             collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
         }
-        else if(collinfo != null)
-        {
-   Debug.Log("Bati de bobo");         
-        }
+
+//         else if(collinfo != null)
+//         {
+//    Debug.Log("Bati de bobo");         
+//         }
     }
 
     public void EndAttack()
