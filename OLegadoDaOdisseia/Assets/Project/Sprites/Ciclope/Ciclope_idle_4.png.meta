@@ -108,9 +108,15 @@ TextureImporter:
         serializedVersion: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         x: 3
         y: 0
         width: 997
+=======
+        x: 0
+        y: 0
+        width: 1000
+>>>>>>> Stashed changes
 =======
         x: 0
         y: 0
@@ -164,7 +170,11 @@ TextureImporter:
     bones: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: db7e0683014e6ea459abc589ac3dbb3b
+=======
+    spriteID: 3704124bb468b0f4aa4f71e572b60ca7
+>>>>>>> Stashed changes
 =======
     spriteID: 3704124bb468b0f4aa4f71e572b60ca7
 >>>>>>> Stashed changes

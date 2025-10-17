@@ -106,9 +106,15 @@ TextureImporter:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         x: 0
         y: 0
         width: 291
+=======
+        x: 139
+        y: 0
+        width: 251
+>>>>>>> Stashed changes
 =======
         x: 139
         y: 0
@@ -171,9 +177,13 @@ TextureImporter:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 75f69fbfd0147744b87c82055fc3820f
 =======
     spriteID: 515e11ca843add542a95870a7f18e1dd
+>>>>>>> Stashed changes
+=======
+    spriteID: bf2c59ae8f987304abe7466e36afe7b9
 >>>>>>> Stashed changes
 =======
     spriteID: bf2c59ae8f987304abe7466e36afe7b9

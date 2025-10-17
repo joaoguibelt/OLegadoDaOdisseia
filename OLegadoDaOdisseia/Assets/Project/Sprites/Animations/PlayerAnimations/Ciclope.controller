@@ -2,6 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -53,6 +54,9 @@ AnimatorStateMachine:
 =======
 --- !u!1102 &-1349843366937385777
 >>>>>>> Stashed changes
+=======
+--- !u!1102 &-1349843366937385777
+>>>>>>> Stashed changes
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -80,7 +84,10 @@ AnimatorState:
   m_TimeParameter: 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!91 &9100000
@@ -128,6 +135,9 @@ AnimatorStateMachine:
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -1349843366937385777}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
