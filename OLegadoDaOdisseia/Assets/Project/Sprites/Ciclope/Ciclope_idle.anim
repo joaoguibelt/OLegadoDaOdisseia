@@ -22,6 +22,7 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 1585926756148924311, guid: 97ca5ed493f3b08459bf57c89076c3d2, type: 3}
+<<<<<<< Updated upstream
     - time: 0.083333336
       value: {fileID: -9189457319869073883, guid: 8fc4fcf443e7bf54ebf2f8fe4bd96c69, type: 3}
     - time: 0.16666667
@@ -37,6 +38,23 @@ AnimationClip:
     - time: 0.5833333
       value: {fileID: 2515456996315997211, guid: 11eb59dd77afda644987df3c8dc546e5, type: 3}
     - time: 0.6666667
+=======
+    - time: 0.16666667
+      value: {fileID: -9189457319869073883, guid: 8fc4fcf443e7bf54ebf2f8fe4bd96c69, type: 3}
+    - time: 0.33333334
+      value: {fileID: -8587819323496829716, guid: 88cc9260d22d24045a443544d7af32d4, type: 3}
+    - time: 0.5
+      value: {fileID: -6628922613422566290, guid: 9a117815df8df734fb1dbb2a7a3fe749, type: 3}
+    - time: 0.6666667
+      value: {fileID: 7138005053126360420, guid: 863c86b1ec534a14d95aab946296ba18, type: 3}
+    - time: 0.8333333
+      value: {fileID: -8877339842106642067, guid: 1b472b1a35219834e8c62ff3d323cf16, type: 3}
+    - time: 1
+      value: {fileID: 3963428704495025116, guid: e7d2866de8f146b40a54cf1f3671863a, type: 3}
+    - time: 1.1666666
+      value: {fileID: 2515456996315997211, guid: 11eb59dd77afda644987df3c8dc546e5, type: 3}
+    - time: 1.3333334
+>>>>>>> Stashed changes
       value: {fileID: -6279790848764396820, guid: d00b3edddfb5cf74f997c89bbc9d6511, type: 3}
     attribute: m_Sprite
     path: 
@@ -74,7 +92,11 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
+<<<<<<< Updated upstream
     m_StopTime: 0.75
+=======
+    m_StopTime: 1.4166667
+>>>>>>> Stashed changes
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -104,7 +104,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         x: 2
+=======
+        x: 13
+>>>>>>> Stashed changes
 =======
         x: 13
 >>>>>>> Stashed changes
@@ -130,9 +134,13 @@ TextureImporter:
     physicsShape: []
     bones: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 356b4ec0c2bdb2a4caf87276e9ac8d5f
 =======
     spriteID: dd908bd38228b6440bd6c42d2f454086
+>>>>>>> Stashed changes
+=======
+    spriteID: 48c80f999a63a014ba46e1d019f0078e
 >>>>>>> Stashed changes
     internalID: 0
     vertices: []

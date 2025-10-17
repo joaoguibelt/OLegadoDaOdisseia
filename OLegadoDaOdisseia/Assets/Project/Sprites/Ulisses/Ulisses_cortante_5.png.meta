@@ -104,6 +104,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         x: 0
         y: 0
         width: 490
@@ -111,6 +112,11 @@ TextureImporter:
         x: 1
         y: 0
         width: 494
+>>>>>>> Stashed changes
+=======
+        x: 1
+        y: 0
+        width: 759
 >>>>>>> Stashed changes
         height: 506
       alignment: 0
@@ -157,9 +163,13 @@ TextureImporter:
     physicsShape: []
     bones: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 6dff5fe0873ffb64cba2dc9e4610dfba
 =======
     spriteID: a253762c12458e846a6c6611cb78844b
+>>>>>>> Stashed changes
+=======
+    spriteID: 5f8d0b7f6f22b7c49bd67a4fb84d6b9e
 >>>>>>> Stashed changes
     internalID: 0
     vertices: []
