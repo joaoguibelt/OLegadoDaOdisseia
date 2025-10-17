@@ -105,7 +105,11 @@ TextureImporter:
         serializedVersion: 2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         x: 0
+=======
+        x: 108
+>>>>>>> Stashed changes
 =======
         x: 108
 >>>>>>> Stashed changes
@@ -135,9 +139,13 @@ TextureImporter:
     bones: []
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     spriteID: 2d587873f8bf7a34da7d3b05307ed523
 =======
     spriteID: d5c5fecd55c50514587b556f56c4cea7
+>>>>>>> Stashed changes
+=======
+    spriteID: 46c0e66a28f609a48bbb7c9579be4abd
 >>>>>>> Stashed changes
 =======
     spriteID: 46c0e66a28f609a48bbb7c9579be4abd

@@ -2577,7 +2577,11 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Controller: {fileID: 9100000, guid: 22720e80e147c064fb76cad1d29f1a75, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: 5dfabda9c05dbc04c8d7bcd21ee78f25, type: 2}
+>>>>>>> Stashed changes
 =======
   m_Controller: {fileID: 9100000, guid: 5dfabda9c05dbc04c8d7bcd21ee78f25, type: 2}
 >>>>>>> Stashed changes
@@ -2802,6 +2806,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Offset: {x: -0.019615412, y: -0.07929742}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -2824,15 +2829,27 @@ BoxCollider2D:
     oldSize: {x: 10, y: 7}
     newSize: {x: 10, y: 7}
 >>>>>>> Stashed changes
+=======
+  m_Offset: {x: 1.8940415, y: 0.101041675}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 7}
+    newSize: {x: 10, y: 7}
+>>>>>>> Stashed changes
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Size: {x: 2.4731765, y: 4.898781}
 =======
   m_Size: {x: 6.548236, y: 7.2276726}
+>>>>>>> Stashed changes
+=======
+  m_Size: {x: 6.548236, y: 7.172228}
 >>>>>>> Stashed changes
 =======
   m_Size: {x: 6.548236, y: 7.172228}
@@ -2887,7 +2904,11 @@ SpriteRenderer:
   m_SortingOrder: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Sprite: {fileID: -7326218803092469622, guid: 7563f974e1798994f91e32c9034f90bf, type: 3}
+=======
+  m_Sprite: {fileID: 1585926756148924311, guid: 97ca5ed493f3b08459bf57c89076c3d2, type: 3}
+>>>>>>> Stashed changes
 =======
   m_Sprite: {fileID: 1585926756148924311, guid: 97ca5ed493f3b08459bf57c89076c3d2, type: 3}
 >>>>>>> Stashed changes
@@ -2899,7 +2920,11 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Size: {x: 0.05, y: 0.2}
+=======
+  m_Size: {x: 10, y: 7}
+>>>>>>> Stashed changes
 =======
   m_Size: {x: 10, y: 7}
 >>>>>>> Stashed changes
@@ -2919,9 +2944,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 2.26, y: 0.073, z: 0}
 =======
   m_LocalPosition: {x: 2.26, y: 0.484, z: 0}
+>>>>>>> Stashed changes
+=======
+  m_LocalPosition: {x: 2.26, y: 0.468, z: 0}
 >>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 2.26, y: 0.468, z: 0}

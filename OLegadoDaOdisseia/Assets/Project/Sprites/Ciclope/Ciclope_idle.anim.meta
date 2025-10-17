@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ciclope/Ciclope_idle.anim.meta
 guid: 6d0dc4bb71a087542ba39584d3a1f2f5
+========
+guid: 5dfabda9c05dbc04c8d7bcd21ee78f25
+>>>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Animations/PlayerAnimations/Ciclope.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

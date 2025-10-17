@@ -23,6 +23,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 1585926756148924311, guid: 97ca5ed493f3b08459bf57c89076c3d2, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - time: 0.083333336
       value: {fileID: -9189457319869073883, guid: 8fc4fcf443e7bf54ebf2f8fe4bd96c69, type: 3}
     - time: 0.16666667
@@ -39,6 +40,8 @@ AnimationClip:
       value: {fileID: 2515456996315997211, guid: 11eb59dd77afda644987df3c8dc546e5, type: 3}
     - time: 0.6666667
 =======
+=======
+>>>>>>> Stashed changes
     - time: 0.16666667
       value: {fileID: -9189457319869073883, guid: 8fc4fcf443e7bf54ebf2f8fe4bd96c69, type: 3}
     - time: 0.33333334
@@ -54,6 +57,9 @@ AnimationClip:
     - time: 1.1666666
       value: {fileID: 2515456996315997211, guid: 11eb59dd77afda644987df3c8dc546e5, type: 3}
     - time: 1.3333334
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       value: {fileID: -6279790848764396820, guid: d00b3edddfb5cf74f997c89bbc9d6511, type: 3}
     attribute: m_Sprite
@@ -93,7 +99,11 @@ AnimationClip:
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_StopTime: 0.75
+=======
+    m_StopTime: 1.4166667
+>>>>>>> Stashed changes
 =======
     m_StopTime: 1.4166667
 >>>>>>> Stashed changes
