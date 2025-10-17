@@ -37,11 +37,11 @@ public class PlayerMoviment : MonoBehaviour
         animator.SetBool(movendoHash, horizontalMoviment != 0);
         if (horizontalMoviment < 0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
         else
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
     }
     public void OnJump(InputAction.CallbackContext context)

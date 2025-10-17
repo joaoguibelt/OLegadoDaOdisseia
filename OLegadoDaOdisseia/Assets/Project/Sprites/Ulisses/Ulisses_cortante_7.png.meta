@@ -103,7 +103,7 @@ TextureImporter:
       name: Ulisses_cortante_7_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 37
         y: 0
         width: 293
         height: 506
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ede7eeac353be924eb8c4a02abcabb25
+    spriteID: e1087b3201ffe0b4cba34b8fd23e8573
     internalID: 0
     vertices: []
     indices: 

@@ -59,22 +59,18 @@ public class PlayerAttack : MonoBehaviour
 
     public void CortanteRange()
     {
-        
-        Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
-        if (collinfo != null && collinfo.gameObject.tag == "Player2")
-        {
-            Debug.Log("Cortei o ciclope");
-            //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-            // o parametro do tipo de ataque dado e do dano
-            Debug.Log(AttackPoint.position);
-            // Debug.Log(collinfo.gameObject.Transform.position);
-            collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
-        }
 
-//         else if(collinfo != null)
-//         {
-//    Debug.Log("Bati de bobo");         
-//         }
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
+        foreach (Collider2D enemy in enemies)
+        {
+            if (enemy.tag == "Player2")
+            {
+                Debug.Log("Cortei o ciclope");
+                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
+                // o parametro do tipo de ataque dado e do dano
+                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
+            }
+        }
     }
 
     public void EndAttack()

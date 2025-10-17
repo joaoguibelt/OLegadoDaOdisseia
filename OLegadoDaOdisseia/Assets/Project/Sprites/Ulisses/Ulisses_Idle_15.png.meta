@@ -106,9 +106,9 @@ TextureImporter:
       name: Ulisses_Idle_15_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 249
+        width: 251
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -128,10 +128,10 @@ TextureImporter:
       name: Ulisses_Idle_15_1
       rect:
         serializedVersion: 2
-        x: 238
-        y: 314
-        width: 13
-        height: 6
+        x: 16
+        y: 0
+        width: 249
+        height: 428
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c14db17f37efa4d41a250b01ad626b2e
+    spriteID: 0cf2c42e18f181e4c940a1680dc281a3
     internalID: 0
     vertices: []
     indices: 
