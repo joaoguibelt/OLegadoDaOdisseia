@@ -103,7 +103,7 @@ TextureImporter:
       name: Ulisses_run_0_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 177
         y: 0
         width: 211
         height: 506
@@ -125,7 +125,11 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
+<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_0.png.meta
     spriteID: e80c8c4d7681e494694522e4238b4ee3
+=======
+    spriteID: e7f7c8e0657d65c4699da5ee4f97d6a2
+>>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_8.png.meta
     internalID: 0
     vertices: []
     indices: 

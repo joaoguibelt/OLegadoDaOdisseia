@@ -103,7 +103,7 @@ TextureImporter:
       name: Ulisses_Idle_13_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
         width: 258
         height: 506
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: eb976425c05572549bc5d2795aeada4c
+    spriteID: 2840968606609a74da20aa2691c4c19d
     internalID: 0
     vertices: []
     indices: 
