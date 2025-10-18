@@ -15,7 +15,14 @@ public class PlayerMoviment : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private int movendoHash = Animator.StringToHash("movendo");
+    public AudioSource somAndando;
 
+    public void somAndar()
+    {
+        float tom = Random.Range(0.9f, 1.2f);
+        somAndando.pitch = tom;
+        somAndando.Play();
+    }
     private void Awake()
     {
         //Obtém a referência do componente Rigidbody2D quando o jogo começa
@@ -35,6 +42,7 @@ public class PlayerMoviment : MonoBehaviour
     {
         horizontalMoviment = context.ReadValue<Vector2>().x;
         animator.SetBool(movendoHash, horizontalMoviment != 0);
+    
         if (horizontalMoviment < 0)
         {
             spriteRenderer.flipX = true;
