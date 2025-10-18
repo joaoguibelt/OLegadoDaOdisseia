@@ -106,27 +106,9 @@ TextureImporter:
       name: Ciclope_idle_4_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        x: 3
-        y: 0
-        width: 997
-=======
         x: 0
         y: 0
         width: 1000
->>>>>>> Stashed changes
-=======
-        x: 0
-        y: 0
-        width: 1000
->>>>>>> Stashed changes
-=======
-        x: 0
-        y: 0
-        width: 1000
->>>>>>> Stashed changes
         height: 700
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -168,19 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    spriteID: db7e0683014e6ea459abc589ac3dbb3b
-=======
-    spriteID: 3704124bb468b0f4aa4f71e572b60ca7
->>>>>>> Stashed changes
-=======
-    spriteID: 3704124bb468b0f4aa4f71e572b60ca7
->>>>>>> Stashed changes
-=======
-    spriteID: 3704124bb468b0f4aa4f71e572b60ca7
->>>>>>> Stashed changes
+    spriteID: afe44cedce85ed74ab93b0846a118069
     internalID: 0
     vertices: []
     indices: 

@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class Rescale : MonoBehaviour
 {
-    public int altura;
+    public string item;
     void Update(){
-        transform.localScale = new Vector2(Screen.width, altura);
+    if (item == "Chao"){
+        transform.localScale = new Vector2(Screen.width, 4);
+    }
+    else
+    {
+        transform.localScale = new Vector2(Screen.width, 10);
+    }
     }
 }

@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player2")
         {
-            collision.gameObject.GetComponent<PlayerAttack>().TakeDamage(AttackType.Perfurante, damage);
+            collision.gameObject.GetComponent<Player2Attack>().TakeDamage(AttackType.Perfurante, damage);
             Destroy(gameObject);
         }
     }

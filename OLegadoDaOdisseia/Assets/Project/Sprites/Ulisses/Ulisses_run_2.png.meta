@@ -103,25 +103,9 @@ TextureImporter:
       name: Ulisses_run_2_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        x: 6
-=======
         x: 7
->>>>>>> Stashed changes
-=======
-        x: 7
->>>>>>> Stashed changes
-=======
-        x: 7
->>>>>>> Stashed changes
-=======
-        x: 7
->>>>>>> Stashed changes
         y: 0
-        width: 276
+        width: 383
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,23 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    spriteID: 483c01525bea94e40b9dacae3f3ddb4e
-=======
-    spriteID: 9ece5856a59bccd4da015eb4b2dab5f8
->>>>>>> Stashed changes
-=======
-    spriteID: c651d9e8bb4168645ab8762f7e8f936e
->>>>>>> Stashed changes
-=======
-    spriteID: c651d9e8bb4168645ab8762f7e8f936e
->>>>>>> Stashed changes
-=======
-    spriteID: c651d9e8bb4168645ab8762f7e8f936e
->>>>>>> Stashed changes
+    spriteID: 4a7d1cfe088aea34e80c390de51c9e10
     internalID: 0
     vertices: []
     indices: 

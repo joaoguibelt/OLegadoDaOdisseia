@@ -21,33 +21,6 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      value: {fileID: -3143461163169609380, guid: 090ca65c97c1ba84a808b21c6a631f19, type: 3}
-=======
-      value: {fileID: 2812691985529140543, guid: 30494ed77130b5e48b066442532162da, type: 3}
->>>>>>> Stashed changes
-    - time: 0.083333336
-      value: {fileID: 2812691985529140543, guid: 30494ed77130b5e48b066442532162da, type: 3}
-    - time: 0.16666667
-      value: {fileID: 276101072613215871, guid: ea04a90d2bb2e8d44b640b5ce7054b01, type: 3}
-    - time: 0.25
-      value: {fileID: -4374408093312992070, guid: ca3901aa0c7697c4886fec9aa061f241, type: 3}
-    - time: 0.33333334
-      value: {fileID: -2558926092812630739, guid: 71310e4285d472a439743067ee672a99, type: 3}
-    - time: 0.41666666
-      value: {fileID: 7740952239810321076, guid: eef5c52d5dd7e4a4ea166be1eaf4e949, type: 3}
-    - time: 0.5
-      value: {fileID: -4700005820949158582, guid: a7cb8927372e7774cadb7d6bd2c4c809, type: 3}
-    - time: 0.5833333
-      value: {fileID: -1636569031096162938, guid: 8b7c0a899d60aca4e8dd32d1dff1d121, type: 3}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       value: {fileID: -1317644297529726312, guid: 6ab1a7bd1fb6e0f40886a707f8a0d3bb, type: 3}
     - time: 0.083333336
       value: {fileID: -1636569031096162938, guid: 8b7c0a899d60aca4e8dd32d1dff1d121, type: 3}
@@ -63,13 +36,6 @@ AnimationClip:
       value: {fileID: 276101072613215871, guid: ea04a90d2bb2e8d44b640b5ce7054b01, type: 3}
     - time: 0.5833333
       value: {fileID: 2812691985529140543, guid: 30494ed77130b5e48b066442532162da, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     attribute: m_Sprite
     path: 
     classID: 212
@@ -92,25 +58,6 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    - {fileID: -3143461163169609380, guid: 090ca65c97c1ba84a808b21c6a631f19, type: 3}
-=======
->>>>>>> Stashed changes
-    - {fileID: 2812691985529140543, guid: 30494ed77130b5e48b066442532162da, type: 3}
-    - {fileID: 276101072613215871, guid: ea04a90d2bb2e8d44b640b5ce7054b01, type: 3}
-    - {fileID: -4374408093312992070, guid: ca3901aa0c7697c4886fec9aa061f241, type: 3}
-    - {fileID: -2558926092812630739, guid: 71310e4285d472a439743067ee672a99, type: 3}
-    - {fileID: 7740952239810321076, guid: eef5c52d5dd7e4a4ea166be1eaf4e949, type: 3}
-    - {fileID: -4700005820949158582, guid: a7cb8927372e7774cadb7d6bd2c4c809, type: 3}
-    - {fileID: -1636569031096162938, guid: 8b7c0a899d60aca4e8dd32d1dff1d121, type: 3}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     - {fileID: -1317644297529726312, guid: 6ab1a7bd1fb6e0f40886a707f8a0d3bb, type: 3}
     - {fileID: -1636569031096162938, guid: 8b7c0a899d60aca4e8dd32d1dff1d121, type: 3}
     - {fileID: -4700005820949158582, guid: a7cb8927372e7774cadb7d6bd2c4c809, type: 3}
@@ -119,13 +66,6 @@ AnimationClip:
     - {fileID: -4374408093312992070, guid: ca3901aa0c7697c4886fec9aa061f241, type: 3}
     - {fileID: 276101072613215871, guid: ea04a90d2bb2e8d44b640b5ce7054b01, type: 3}
     - {fileID: 2812691985529140543, guid: 30494ed77130b5e48b066442532162da, type: 3}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -150,4 +90,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: CortanteRange
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.41666666
+    functionName: EndAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

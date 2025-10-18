@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 76fead1c9bb7634408887cd345c01789
+guid: 6ab1a7bd1fb6e0f40886a707f8a0d3bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8803894149360284160
-    second: Ulisses_run_0_0
+      213: -1317644297529726312
+    second: Ulisses_cortante_8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ulisses_run_0_0
+      name: Ulisses_cortante_8_0
       rect:
         serializedVersion: 2
-        x: 177
+        x: 71
         y: 0
-        width: 211
+        width: 259
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00e8d3b8ae842d580800000000000000
-      internalID: -8803894149360284160
+      spriteID: 89aeb691e79c6bde0800000000000000
+      internalID: -1317644297529726312
       vertices: []
       indices: 
       edges: []
@@ -125,23 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_0.png.meta
-<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_0.png.meta
-<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_0.png.meta
-<<<<<<< Updated upstream:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_0.png.meta
-    spriteID: e80c8c4d7681e494694522e4238b4ee3
-=======
-    spriteID: e7f7c8e0657d65c4699da5ee4f97d6a2
->>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_8.png.meta
-=======
-    spriteID: 36f3b1efd81907f42a9ae2f48c13272c
->>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_8.png.meta
-=======
-    spriteID: 36f3b1efd81907f42a9ae2f48c13272c
->>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_8.png.meta
-=======
-    spriteID: 36f3b1efd81907f42a9ae2f48c13272c
->>>>>>> Stashed changes:OLegadoDaOdisseia/Assets/Project/Sprites/Ulisses/Ulisses_run_8.png.meta
+    spriteID: c4bf18d9718fcd34b915189e2319c21c
     internalID: 0
     vertices: []
     indices: 
@@ -151,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ulisses_run_0_0: -8803894149360284160
+      Ulisses_cortante_8_0: -1317644297529726312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

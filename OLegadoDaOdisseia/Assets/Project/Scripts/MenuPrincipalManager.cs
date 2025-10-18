@@ -5,7 +5,6 @@ public class MenuPrincipalManager : MonoBehaviour
 {
     public string Level;
     public GameObject Pause;
-    public GameObject Opcoes;
 
     void Update()
     {

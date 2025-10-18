@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 6678347765309469483
     second: Ulisses_run_7_0
+  - first:
+      213: 1915996278091084440
+    second: Ulisses_run_7_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,33 +106,9 @@ TextureImporter:
       name: Ulisses_run_7_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        x: 0
-        y: 0
-        width: 291
-=======
         x: 139
         y: 0
         width: 251
->>>>>>> Stashed changes
-=======
-        x: 139
-        y: 0
-        width: 251
->>>>>>> Stashed changes
-=======
-        x: 139
-        y: 0
-        width: 251
->>>>>>> Stashed changes
-=======
-        x: 139
-        y: 0
-        width: 251
->>>>>>> Stashed changes
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -145,8 +124,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-<<<<<<< Updated upstream
-=======
     - serializedVersion: 2
       name: Ulisses_run_7_1
       rect:
@@ -169,28 +146,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
->>>>>>> Stashed changes
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    spriteID: 75f69fbfd0147744b87c82055fc3820f
-=======
-    spriteID: 515e11ca843add542a95870a7f18e1dd
->>>>>>> Stashed changes
-=======
-    spriteID: bf2c59ae8f987304abe7466e36afe7b9
->>>>>>> Stashed changes
-=======
-    spriteID: bf2c59ae8f987304abe7466e36afe7b9
->>>>>>> Stashed changes
-=======
-    spriteID: bf2c59ae8f987304abe7466e36afe7b9
->>>>>>> Stashed changes
+    spriteID: 725cb88615cf69249bd24a5ab58688ae
     internalID: 0
     vertices: []
     indices: 
@@ -201,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ulisses_run_7_0: 6678347765309469483
+      Ulisses_run_7_1: 1915996278091084440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

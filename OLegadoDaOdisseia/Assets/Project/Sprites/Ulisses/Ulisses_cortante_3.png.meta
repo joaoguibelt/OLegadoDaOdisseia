@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -4374408093312992070
     second: Ulisses_cortante_3_0
-  - first:
-      213: -5513883426742671890
-    second: Ulisses_cortante_3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,9 +103,9 @@ TextureImporter:
       name: Ulisses_cortante_3_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 758
+        width: 490
         height: 506
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -124,49 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Ulisses_cortante_3_1
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 0
-        width: 494
-        height: 415
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee5e618bc30ca73b0800000000000000
-      internalID: -5513883426742671890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    spriteID: 5266f5a25f723db418aca7696b0af3e3
-=======
-    spriteID: 62f41a2eb60486444a00b2e8d43eb6c4
->>>>>>> Stashed changes
-=======
-    spriteID: ab49ba73412c39b468c50b4b11f29fc9
->>>>>>> Stashed changes
-=======
-    spriteID: ab49ba73412c39b468c50b4b11f29fc9
->>>>>>> Stashed changes
-=======
-    spriteID: ab49ba73412c39b468c50b4b11f29fc9
->>>>>>> Stashed changes
+    spriteID: d67e5cfb0538ccb48841a2b3f27284f7
     internalID: 0
     vertices: []
     indices: 
@@ -177,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ulisses_cortante_3_0: -4374408093312992070
-      Ulisses_cortante_3_1: -5513883426742671890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

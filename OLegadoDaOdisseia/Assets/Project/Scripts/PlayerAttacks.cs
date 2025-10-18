@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
+   
     //animacao
     public Animator animator;
 
@@ -23,6 +24,9 @@ public class PlayerAttack : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform projectilePoint;
 
+    //sons
+    public AudioSource somCortante;
+    public AudioSource somPerfurante;
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
@@ -31,6 +35,7 @@ public class PlayerAttack : MonoBehaviour
             //roda animacao e seleciona o attacktype
             animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
+
         }
     }
     /*
@@ -49,6 +54,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if (projectilePoint != null && projectilePoint != null)
             {
+                somPerfurante.Play();
                 animator.SetTrigger("AtkPerfurante");
                 currentAttackType = AttackType.Perfurante;
                 Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
@@ -59,37 +65,10 @@ public class PlayerAttack : MonoBehaviour
 
     public void CortanteRange()
     {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        
-        Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
-        if (collinfo != null && collinfo.gameObject.tag == "Player2")
-        {
-            Debug.Log("Cortei o ciclope");
-            //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-            // o parametro do tipo de ataque dado e do dano
-            collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
-        }
-        else if(collinfo != null)
-        {
-   Debug.Log("Bati de bobo");         
-=======
-
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
-        foreach (Collider2D enemy in enemies)
-        {
-            if (enemy.tag == "Player2")
-            {
-                Debug.Log("Cortei o ciclope");
-                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-                // o parametro do tipo de ataque dado e do dano
-                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
-            }
->>>>>>> Stashed changes
-        }
-=======
+        //colocar pra randomizar pitch
+        float tom = Random.Range(0.9f, 1.2f);
+        somCortante.pitch = tom;
+        somCortante.Play();
         Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
         foreach (Collider2D enemy in enemies)
         {
@@ -101,33 +80,6 @@ public class PlayerAttack : MonoBehaviour
                 enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
             }
         }
->>>>>>> Stashed changes
-=======
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
-        foreach (Collider2D enemy in enemies)
-        {
-            if (enemy.tag == "Player2")
-            {
-                Debug.Log("Cortei o ciclope");
-                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-                // o parametro do tipo de ataque dado e do dano
-                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
-            }
-        }
->>>>>>> Stashed changes
-=======
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
-        foreach (Collider2D enemy in enemies)
-        {
-            if (enemy.tag == "Player2")
-            {
-                Debug.Log("Cortei o ciclope");
-                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-                // o parametro do tipo de ataque dado e do dano
-                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
-            }
-        }
->>>>>>> Stashed changes
     }
 
     public void EndAttack()
