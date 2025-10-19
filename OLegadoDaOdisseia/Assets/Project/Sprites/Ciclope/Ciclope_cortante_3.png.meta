@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 88cc9260d22d24045a443544d7af32d4
+guid: e9e9fe0972193f841ac1cb17a17c4a9f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8587819323496829716
-    second: Ciclope_idle_2_0
+      213: -1239375518223857207
+    second: Ciclope_cortante_3_0
   - first:
-      213: -46942829661245997
-    second: Ciclope_idle_2_1
+      213: 4219906770960201615
+    second: Ciclope_cortante_3_1
+  - first:
+      213: 663636445229793641
+    second: Ciclope_cortante_3_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,12 +106,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ciclope_idle_2_0
+      name: Ciclope_cortante_3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 390
         y: 0
-        width: 1000
+        width: 699
         height: 1100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -118,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cec6cb353dfe1d880800000000000000
-      internalID: -8587819323496829716
+      spriteID: 9c983fc588adccee0800000000000000
+      internalID: -1239375518223857207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ciclope_idle_2_1
+      name: Ciclope_cortante_3_1
       rect:
         serializedVersion: 2
-        x: 11
-        y: 0
-        width: 976
-        height: 669
+        x: 1088
+        y: 75
+        width: 7
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +143,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dd2a41ceb9395ff0800000000000000
-      internalID: -46942829661245997
+      spriteID: f873954a9de109a30800000000000000
+      internalID: 4219906770960201615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ciclope_cortante_3_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 34
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961cce1b4d5b53900800000000000000
+      internalID: 663636445229793641
       vertices: []
       indices: 
       edges: []
@@ -150,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 701b12fe4ea5f92419a682624b9cbebe
+    spriteID: a7bfecce76e6b00418633388c5452bd0
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ciclope_idle_2_0: -8587819323496829716
-      Ciclope_idle_2_1: -46942829661245997
+      Ciclope_cortante_3_0: -1239375518223857207
+      Ciclope_cortante_3_1: 4219906770960201615
+      Ciclope_cortante_3_2: 663636445229793641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

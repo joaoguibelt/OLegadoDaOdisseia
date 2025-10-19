@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 88cc9260d22d24045a443544d7af32d4
+guid: 94a591550d74c8a4d8e53d20d9c61ea4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8587819323496829716
-    second: Ciclope_idle_2_0
-  - first:
-      213: -46942829661245997
-    second: Ciclope_idle_2_1
+      213: -7468920273809036062
+    second: Ciclope_cortante_7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ciclope_idle_2_0
+      name: Ciclope_cortante_7_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 115
         y: 0
-        width: 1000
+        width: 989
         height: 1100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cec6cb353dfe1d880800000000000000
-      internalID: -8587819323496829716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ciclope_idle_2_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 0
-        width: 976
-        height: 669
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd2a41ceb9395ff0800000000000000
-      internalID: -46942829661245997
+      spriteID: 2ec26ef3590195890800000000000000
+      internalID: -7468920273809036062
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 701b12fe4ea5f92419a682624b9cbebe
+    spriteID: 741f2db54b68a574ba5ac5c2ea610e7a
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ciclope_idle_2_0: -8587819323496829716
-      Ciclope_idle_2_1: -46942829661245997
+      Ciclope_cortante_7_0: -7468920273809036062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

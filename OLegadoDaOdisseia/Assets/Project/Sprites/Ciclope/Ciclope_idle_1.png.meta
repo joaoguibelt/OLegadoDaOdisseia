@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -9189457319869073883
     second: Ciclope_idle_1_0
-  - first:
-      213: -7704338360086318806
-    second: Ciclope_idle_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +106,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 1000
-        height: 700
+        height: 1100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,33 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Ciclope_idle_1_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 976
-        height: 661
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a21b3a1b411b41590800000000000000
-      internalID: -7704338360086318806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: adc14e29d669a724782b848587514474
+    spriteID: 6ee51f584fcd59b4288b55cc55e2b2a2
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ciclope_idle_1_0: -9189457319869073883
-      Ciclope_idle_1_1: -7704338360086318806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

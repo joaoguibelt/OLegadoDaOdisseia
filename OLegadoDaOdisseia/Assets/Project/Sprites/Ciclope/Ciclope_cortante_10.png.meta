@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1b472b1a35219834e8c62ff3d323cf16
+guid: 1721607886f1cb94a94ef87ec12c8f54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8877339842106642067
-    second: Ciclope_idle_5_0
-  - first:
-      213: -2892446511683718025
-    second: Ciclope_idle_5_1
+      213: 6624375654825623350
+    second: Ciclope_cortante_10_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ciclope_idle_5_0
+      name: Ciclope_cortante_10_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 1000
-        height: 700
+        width: 982
+        height: 1100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d61bfc0a27a5dc480800000000000000
-      internalID: -8877339842106642067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ciclope_idle_5_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 977
-        height: 695
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7743643f837fbd7d0800000000000000
-      internalID: -2892446511683718025
+      spriteID: 63f70a48f828eeb50800000000000000
+      internalID: 6624375654825623350
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08c53abb82d72e84590b96289542dd64
+    spriteID: 90bc263a314778444b80b2b349458818
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ciclope_idle_5_0: -8877339842106642067
-      Ciclope_idle_5_1: -2892446511683718025
+      Ciclope_cortante_10_0: 6624375654825623350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

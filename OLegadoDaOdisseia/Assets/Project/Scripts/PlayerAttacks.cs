@@ -77,7 +77,7 @@ public class PlayerAttack : MonoBehaviour
                 Debug.Log("Cortei o ciclope");
                 //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
                 // o parametro do tipo de ataque dado e do dano
-                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
+                enemy.gameObject.GetComponent<EnemyAttacks>().TakeDamage(currentAttackType, 1);
             }
         }
     }

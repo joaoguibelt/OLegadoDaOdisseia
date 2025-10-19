@@ -109,7 +109,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 1000
-        height: 700
+        height: 1100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +128,7 @@ TextureImporter:
       name: Ciclope_idle_4_1
       rect:
         serializedVersion: 2
-        x: 6
+        x: 12
         y: 0
         width: 977
         height: 699
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: afe44cedce85ed74ab93b0846a118069
+    spriteID: ffe091420afb5a2499561c2f789ae41f
     internalID: 0
     vertices: []
     indices: 
