@@ -26,7 +26,7 @@ public class PlayerAttack : MonoBehaviour
 
     //sons
     public AudioSource somCortante;
-    public AudioSource somPerfurante;
+    public AudioSource somDistancia;
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
@@ -38,37 +38,39 @@ public class PlayerAttack : MonoBehaviour
 
         }
     }
-    /*
-    public void AttackContundente(InputAction.CallbackContext context)
+    public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            animator.SetTrigger("AtkContundente");
-            currentAttackType = AttackType.Distancia;
+            animator.SetTrigger("perfurante");
+            currentAttackType = AttackType.Perfurante;
         }
     }
-    */
-    public void AttackPerfurante(InputAction.CallbackContext context)
+    public void AttackDistancia(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             if (projectilePoint != null && projectilePoint != null)
             {
-                somPerfurante.Play();
+                somDistancia.Play();
                 animator.SetTrigger("AtkPerfurante");
-                currentAttackType = AttackType.Perfurante;
+                currentAttackType = AttackType.Distancia;
                 Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
                 Debug.Log("Atirou!");
             }
         }
     }
 
-    public void CortanteRange()
+    public void RangeAttack()
     {
         //colocar pra randomizar pitch
-        float tom = Random.Range(0.9f, 1.2f);
-        somCortante.pitch = tom;
-        somCortante.Play();
+        if (currentAttackType == AttackType.Cortante) //mudar pra switch
+        {
+            float tom = Random.Range(0.9f, 1.2f);
+            somCortante.pitch = tom;
+            somCortante.Play();
+        }
+
         Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
         foreach (Collider2D enemy in enemies)
         {

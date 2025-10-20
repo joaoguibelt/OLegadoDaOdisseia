@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log("Update -> State = " + currentState + "  Timer = " + decisionTimer);
+        //Debug.Log("Update -> State = " + currentState + "  Timer = " + decisionTimer);
         switch (currentState)
         {
             case State.Idle:
@@ -63,14 +63,14 @@ public class Enemy : MonoBehaviour
         //acabando o tempo, toma alguma decisao (é como um "dlay humano")
         if (decisionTimer <= 0)
         {
-            Debug.Log("Vou fazer uma decisao!\n\n");
+            //Debug.Log("Vou fazer uma decisao!\n\n");
             MakeAction();
         }
     }
 
     void InChase()
     {
-        Debug.Log("Entrei em chase!");
+        //Debug.Log("Entrei em chase!");
         //encontrando a direcao pra seguir dependendo da posicao do player
         float direction;
         if (player.position.x > transform.position.x)
@@ -92,7 +92,7 @@ public class Enemy : MonoBehaviour
 
     void InMovingOut()
     {
-        Debug.Log("Estou recuando!");
+        //Debug.Log("Estou recuando!");
         float direction_out;
         if (player.position.x > transform.position.x)
             direction_out = -1f;
@@ -113,12 +113,12 @@ public class Enemy : MonoBehaviour
     void MakeAction()
     {
         float PlayerDistance = Math.Abs(player.position.x - transform.position.x);
-        Debug.Log("Ditancia ate o player: " + PlayerDistance);
+        //Debug.Log("Ditancia ate o player: " + PlayerDistance);
 
         //SE ESTIVER DENTRO DO RAIO DE ATAQUE MEELE, ESCOLHE ENTRE ATAQUE CORTANTE (70%) OU MOVER PRA TRAS(30%)
         if (PlayerDistance < chaseZone)
         {
-            Debug.Log("primeiro if");
+            //Debug.Log("primeiro if");
             if (UnityEngine.Random.Range(0.0f, 1.0f) <= 0.6f)
                 scriptEnemyAttack.AttackCortante();
             else
@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
         //SE ESTIVER DETRO DE 2X O RAIO DE MEELE, ESCOLHE ENTRE CHASING (50%) OU ATAQUE DISTANCIA
         else if (PlayerDistance < (chaseZone * 2.5f))
         {
-            Debug.Log("Segundo if");
+            //Debug.Log("Segundo if");
             if (UnityEngine.Random.Range(0.0f, 1.0f) < 0.5f)
                 currentState = State.Chasing;
             else
@@ -144,7 +144,7 @@ public class Enemy : MonoBehaviour
             else
                 currentState = State.movingOut;
         }
-        Debug.Log("Reiniciando timer");
+        //Debug.Log("Reiniciando timer");
         decisionTimer = UnityEngine.Random.Range(0.5f, 1.5f);
     }
 }

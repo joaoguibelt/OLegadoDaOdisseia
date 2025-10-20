@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "AtkContudente",
+                    "name": "AtkPerfurante",
                     "type": "Button",
                     "id": "ec4bd65d-63f9-45c6-aab3-8dbb7342ac04",
                     "expectedControlType": "",
@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "AtkPerfurante",
+                    "name": "AtkDistancia",
                     "type": "Button",
                     "id": "5491ccf9-1b68-47c6-8434-3b8e383d806b",
                     "expectedControlType": "",
@@ -157,7 +157,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AtkContudente",
+                    "action": "AtkPerfurante",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -168,7 +168,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AtkPerfurante",
+                    "action": "AtkDistancia",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
