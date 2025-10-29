@@ -12,8 +12,6 @@ public class ReescaleObjects : MonoBehaviour
     {
 
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         //largura e altura da camera
@@ -25,6 +23,7 @@ public class ReescaleObjects : MonoBehaviour
         float spriteHeight = spriteRenderer.sprite.bounds.size.y;
         float spriteWidth = spriteRenderer.sprite.bounds.size.x;
 
+
         UnityEngine.Vector2 newScale = transform.localScale;
         if (RenderX)
             newScale.x = camWidth / spriteWidth;
@@ -32,5 +31,6 @@ public class ReescaleObjects : MonoBehaviour
             newScale.y = camHeight / spriteHeight;
 
         transform.localScale = newScale;
+
     }
 }

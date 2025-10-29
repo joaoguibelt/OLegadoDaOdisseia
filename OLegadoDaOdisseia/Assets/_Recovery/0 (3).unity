@@ -3394,7 +3394,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2066827066}
         m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Muda_bool
+        m_MethodName: Muda_cena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3406,7 +3406,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2066827066}
         m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: Muda_cena
+        m_MethodName: Muda_bool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
