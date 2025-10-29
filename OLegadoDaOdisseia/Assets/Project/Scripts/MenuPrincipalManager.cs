@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipalManager : MonoBehaviour
 {
-    public string Level;
+    [SerializeField] private string Level;
     public GameObject Pause;
 
     void Update()
@@ -17,11 +17,18 @@ public class MenuPrincipalManager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
-    public void muda_cena()
+
+    public void Muda_bool()
+    {
+        GameData.storyMode = true;
+    }
+
+    public void Muda_cena()
     {
         SceneManager.LoadScene(Level);
     }
-    public void fechar_jogo()
+
+    public void Fechar_jogo()
     {
         Application.Quit();
     }

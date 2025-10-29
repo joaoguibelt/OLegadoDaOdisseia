@@ -7,6 +7,7 @@ TagManager:
   - MainGround
   - Player2
   - cenario
+  - Bot
   layers:
   - Default
   - TransparentFX

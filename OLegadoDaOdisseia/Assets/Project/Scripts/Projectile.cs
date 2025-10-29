@@ -18,9 +18,14 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player2")
+        if (collision.gameObject.tag == "Bot")
         {
             collision.gameObject.GetComponent<EnemyAttacks>().TakeDamage(AttackType.Perfurante, damage);
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.tag == "Player2")
+        {
+            collision.gameObject.GetComponent<Player2Attack>().TakeDamage(AttackType.Perfurante, damage);
             Destroy(gameObject);
         }
     }

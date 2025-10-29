@@ -5,12 +5,13 @@ using UnityEngine.InputSystem;
 
 public class Player2Attack : MonoBehaviour
 {
+
     //animacao
     public Animator animator;
 
     //hitbox
     public Transform AttackPoint;
-    public float AttackRadius = 0.5f;
+    public float AttackRadius = 1.55f;
     public LayerMask AttackLayer;
 
     //tipo ataque
@@ -23,48 +24,60 @@ public class Player2Attack : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform projectilePoint;
 
+    //sons
+    public AudioSource somCortante;
+    public AudioSource somDistancia;
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             //roda animacao e seleciona o attacktype
-            animator.SetTrigger("AtkCortante");
+            animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
+
         }
     }
-    /*
-    public void AttackContundente(InputAction.CallbackContext context)
+    public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            animator.SetTrigger("AtkCortante");
-            currentAttackType = AttackType.Distancia;
+            animator.SetTrigger("perfurante");
+            currentAttackType = AttackType.Perfurante;
         }
     }
-    */
-    public void AttackPerfurante(InputAction.CallbackContext context)
+    public void AttackDistancia(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             if (projectilePoint != null && projectilePoint != null)
             {
+                somDistancia.Play();
                 animator.SetTrigger("AtkPerfurante");
-                currentAttackType = AttackType.Perfurante;
+                currentAttackType = AttackType.Distancia;
                 Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
                 Debug.Log("Atirou!");
             }
         }
     }
 
-    public void CortanteRange()
+    public void RangeAttack()
     {
-        Collider2D collinfo = Physics2D.OverlapCircle(AttackPoint.position, AttackRadius, AttackLayer);
-        if (collinfo.gameObject.tag == "Player")
+        //colocar pra randomizar pitch
+        if (currentAttackType == AttackType.Cortante) //mudar pra switch
         {
-            //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
-            // o parametro do tipo de ataque dado e do dano
-            collinfo.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
+            float tom = Random.Range(0.9f, 1.2f);
+            somCortante.pitch = tom;
+            somCortante.Play();
+        }
+
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
+        foreach (Collider2D enemy in enemies)
+        {
+            if (enemy.tag == "Player")
+            {
+                enemy.gameObject.GetComponent<PlayerAttack>().TakeDamage(currentAttackType, 1);
+            }
         }
     }
 

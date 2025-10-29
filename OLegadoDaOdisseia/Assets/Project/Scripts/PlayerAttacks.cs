@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-   
+
     //animacao
     public Animator animator;
 
@@ -74,12 +74,19 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
         foreach (Collider2D enemy in enemies)
         {
-            if (enemy.tag == "Player2")
+            if (enemy.tag == "Bot")
             {
                 Debug.Log("Cortei o ciclope");
-                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
+                //pega o script enemyattacks do boss atingido e ativa a funcao TakeDamage com
                 // o parametro do tipo de ataque dado e do dano
                 enemy.gameObject.GetComponent<EnemyAttacks>().TakeDamage(currentAttackType, 1);
+            }
+            else if (enemy.tag == "Player2")
+            {
+                Debug.Log("Cortei o Player2");
+                //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
+                // o parametro do tipo de ataque dado e do dano
+                enemy.gameObject.GetComponent<Player2Attack>().TakeDamage(currentAttackType, 1);
             }
         }
     }
