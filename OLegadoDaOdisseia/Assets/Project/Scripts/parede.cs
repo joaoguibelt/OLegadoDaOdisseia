@@ -7,11 +7,11 @@ public class parede : MonoBehaviour
     {
         if (esquerda == true)
         {
-            transform.position = new Vector2(-(float)Screen.width / (float)Screen.height * 5, 0);
+            transform.position = new Vector2(-(float)Screen.width / (float)Screen.height * 4, 0);
         }
         else
         {
-            transform.position = new Vector2((float)Screen.width / (float)Screen.height * 5, 0);
+            transform.position = new Vector2((float)Screen.width / (float)Screen.height * 4, 0);
         }
     }
 }
