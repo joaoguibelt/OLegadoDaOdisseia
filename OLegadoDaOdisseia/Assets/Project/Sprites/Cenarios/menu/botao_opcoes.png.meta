@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0637e5854a1806b4d8f56959bda6e05e
+guid: 5a27d7a46347b7249aec39ed16f97bae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3725139703807524654
-    second: menu principal_0
+      213: -5180329274479358549
+    second: botao_opcoes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu principal_0
+      name: botao_opcoes_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 1030
+        height: 337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2fb620f2da52b330800000000000000
-      internalID: 3725139703807524654
+      spriteID: badc91fa8f5cb18b0800000000000000
+      internalID: -5180329274479358549
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menu principal_0: 3725139703807524654
+      botao_opcoes_0: -5180329274479358549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

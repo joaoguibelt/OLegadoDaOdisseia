@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c93f3e491fb7ba747b2d5996db51e92a
+guid: 8a8c813ae16636549be90947f2aba0ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2146297966566544663
-    second: barco_0
+      213: -7436214265768916583
+    second: botao_iniciar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: barco_0
+      name: botao_iniciar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 30
+        width: 1030
+        height: 337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ea68a8fe51d632e0800000000000000
-      internalID: -2146297966566544663
+      spriteID: 999c62726824dc890800000000000000
+      internalID: -7436214265768916583
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      barco_0: -2146297966566544663
+      botao_iniciar_0: -7436214265768916583
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

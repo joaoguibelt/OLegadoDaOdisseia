@@ -16,7 +16,7 @@ public class parede : MonoBehaviour
         }
         else
         {
-            transform.position = new Vector2(camWidth / 2, 0);
+            transform.position = new Vector2((camWidth + 0.1f) / 2, 0);
         }
     }
 }

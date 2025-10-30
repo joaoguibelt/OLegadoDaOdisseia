@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e7eb583e029f834787cff8fb017efc9
+guid: 53a2b4b37ec09134aba0c2708fb58552
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8845503120908645927
-    second: fundo botao 1_0
+      213: 7041406537053197775
+    second: botao_sair_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fundo botao 1_0
+      name: botao_sair_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 30
+        width: 1030
+        height: 337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d981aae6c57e3580800000000000000
-      internalID: -8845503120908645927
+      spriteID: fc55b2040f918b160800000000000000
+      internalID: 7041406537053197775
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fundo botao 1_0: -8845503120908645927
+      botao_sair_0: 7041406537053197775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
