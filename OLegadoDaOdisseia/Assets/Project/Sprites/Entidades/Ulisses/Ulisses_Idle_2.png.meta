@@ -103,10 +103,10 @@ TextureImporter:
       name: Ulisses_Idle_2_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 254
-        height: 506
+        width: 1200
+        height: 600
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

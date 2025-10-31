@@ -53,12 +53,16 @@ public class Player2Attack : MonoBehaviour
             if (projectilePoint != null && projectilePoint != null)
             {
                 somDistancia.Play();
-                animator.SetTrigger("AtkPerfurante");
+                animator.SetTrigger("ranged");
                 currentAttackType = AttackType.Distancia;
-                Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
                 Debug.Log("Atirou!");
             }
         }
+    }
+
+public void DistantAttack()
+    {
+        Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
     }
 
     public void RangeAttack()
