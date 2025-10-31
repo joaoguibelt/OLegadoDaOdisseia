@@ -2465,6 +2465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Options
   music: {fileID: 923445931}
   SFX: {fileID: 1964546268}
+  background: {fileID: 1463024850}
 --- !u!1 &698464878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,7 +3000,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 694121675}
         m_TargetAssemblyTypeName: Options, Assembly-CSharp
-        m_MethodName: Volume
+        m_MethodName: musicVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4595,7 +4596,7 @@ AudioSource:
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -6152,7 +6153,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 694121675}
         m_TargetAssemblyTypeName: Options, Assembly-CSharp
-        m_MethodName: Volume
+        m_MethodName: sfxVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
