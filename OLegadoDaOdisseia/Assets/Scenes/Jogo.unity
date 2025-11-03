@@ -3265,6 +3265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuPrincipalManager
   Level: Menu
   Pause: {fileID: 9687448}
+  player1: {fileID: -944628639613478452, guid: 726ab141f1cea644f946279a32bf5ebb, type: 3}
+  player2: {fileID: -944628639613478452, guid: da7485f6d88618e4dbfdd981aafa1f42, type: 3}
 --- !u!4 &1010394007
 Transform:
   m_ObjectHideFlags: 0

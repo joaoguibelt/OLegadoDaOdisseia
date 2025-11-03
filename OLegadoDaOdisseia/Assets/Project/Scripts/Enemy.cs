@@ -38,6 +38,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(MenuPrincipalManager.isPaused)
+            return;
         //Debug.Log("Update -> State = " + currentState + "  Timer = " + decisionTimer);
         switch (currentState)
         {

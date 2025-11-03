@@ -34,6 +34,8 @@ public class Player2Moviment : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(MenuPrincipalManager.isPaused)
+            return;
         //altera o valor da velocidade linear do componente RigidBody usando new Vector2(x,y)
         rb.linearVelocity = new Vector2(horizontalMoviment * moveSpeed, rb.linearVelocityY);
     }

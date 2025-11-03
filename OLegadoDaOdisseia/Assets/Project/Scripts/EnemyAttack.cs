@@ -19,18 +19,6 @@ public class EnemyAttacks : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform projectilePoint;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void AttackCortante()
     {
         Debug.Log("Ciclope Cortante!");

@@ -6,15 +6,20 @@ public class Options : MonoBehaviour
     public Slider music;
     public Slider SFX;
     public AudioSource background;
+
+    private void Start()
+    {
+        music.value = 0.5f;
+        background.volume = music.value;
+    }
+
     public void FixedUpdate()
     {
-        music.value = GameData.music;
         SFX.value = GameData.SFX;
-        background.volume = GameData.music;
     }
     public void musicVolume()
     {
-        GameData.music = music.value;
+        background.volume = music.value;
     }
     public void sfxVolume()
     {
