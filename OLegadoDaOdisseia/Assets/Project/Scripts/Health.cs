@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] Image barra_de_vida;
     [SerializeField] Image barra_secundaria;
 
     public float vida_max = 1000;
+
     public float vida_atual;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
         DiminuirSecundaria();
     }
 
-    public void DiminuirVida(float quantidade)
+    public void DiminuirVida(int quantidade)
         {
             vida_atual = Mathf.Clamp(vida_atual - quantidade, 0, vida_max);
 

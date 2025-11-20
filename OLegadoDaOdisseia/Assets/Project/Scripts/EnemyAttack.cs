@@ -13,7 +13,7 @@ public class EnemyAttacks : MonoBehaviour
     public AttackType currentAttackType = AttackType.None;
 
     //vida
-    public int maxHealth = 10;
+    [SerializeField] Health hp_script;
 
     //ataque a distancia
     public GameObject projectilePrefab;
@@ -87,7 +87,7 @@ public class EnemyAttacks : MonoBehaviour
     public void TakeDamage(AttackType opponentattack, int damage)
     {
         //se a vida for igual ou menor que 0, nao continua a funcao e printa Player Died
-        if (maxHealth <= 0)
+        if (hp_script.vida_atual <= 0)
         {
             Debug.Log("Player Died");
             return;
@@ -112,7 +112,7 @@ public class EnemyAttacks : MonoBehaviour
             case -1:
                 Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);
                 //perdi, logo toma dano
-                maxHealth -= damage;
+                hp_script.DiminuirVida(damage);
                 break;
         }
     }
