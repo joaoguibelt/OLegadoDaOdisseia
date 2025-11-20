@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -2558926092812630739
     second: Ulisses_cortante_4_0
+  - first:
+      213: 523826923523323973
+    second: Ulisses_cortante_4_1
+  - first:
+      213: -4654728372993233646
+    second: Ulisses_cortante_4_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,11 +127,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ulisses_cortante_4_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 272
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548b464cfc1054700800000000000000
+      internalID: 523826923523323973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ulisses_cortante_4_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 231
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d6ec1e435176fb0800000000000000
+      internalID: -4654728372993233646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d70d84fea7412f44bba15001806f307f
+    spriteID: 3107f184b7df7d94e8c30a1665119776
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +186,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ulisses_cortante_4_0: -2558926092812630739
+      Ulisses_cortante_4_1: 523826923523323973
+      Ulisses_cortante_4_2: -4654728372993233646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

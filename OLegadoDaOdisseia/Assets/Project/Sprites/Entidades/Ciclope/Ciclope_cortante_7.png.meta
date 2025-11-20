@@ -103,10 +103,10 @@ TextureImporter:
       name: Ciclope_cortante_7_0
       rect:
         serializedVersion: 2
-        x: 115
+        x: 0
         y: 0
-        width: 989
-        height: 1100
+        width: 2000
+        height: 1300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 741f2db54b68a574ba5ac5c2ea610e7a
+    spriteID: 02ff82880827b3c469cab95bec78450f
     internalID: 0
     vertices: []
     indices: 

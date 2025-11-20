@@ -20,6 +20,11 @@ public class Enemy : MonoBehaviour
     //CONTROLE DE ESTADO
     private float decisionTimer;
     public State currentState = State.Idle;
+
+    //ANIMATOR
+    public Animator animator;
+    private bool estado;
+    
     public enum State
     {
         Idle,
@@ -38,15 +43,18 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        move(estado);
         if(MenuPrincipalManager.isPaused)
             return;
         //Debug.Log("Update -> State = " + currentState + "  Timer = " + decisionTimer);
         switch (currentState)
         {
             case State.Idle:
+                estado = false;
                 InIdle();
                 break;
             case State.Chasing:
+                estado = true;
                 InChase();
                 break;
             case State.movingOut:
@@ -131,8 +139,9 @@ public class Enemy : MonoBehaviour
         else if (PlayerDistance < (chaseZone * 2.5f))
         {
             //Debug.Log("Segundo if");
-            if (UnityEngine.Random.Range(0.0f, 1.0f) < 0.5f)
+            if (UnityEngine.Random.Range(0.0f, 1.0f) < 0.5f){
                 currentState = State.Chasing;
+            }
             else
                 scriptEnemyAttack.AttackPerfurante();
 
@@ -148,5 +157,9 @@ public class Enemy : MonoBehaviour
         }
         //Debug.Log("Reiniciando timer");
         decisionTimer = UnityEngine.Random.Range(0.5f, 1.5f);
+    }
+    void move(bool estado)
+    {
+        animator.SetBool("movendo", estado);
     }
 }
