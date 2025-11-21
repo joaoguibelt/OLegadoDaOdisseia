@@ -24,7 +24,14 @@ public class Enemy : MonoBehaviour
     //ANIMATOR
     public Animator animator;
     private bool estado;
+    /*public AudioSource walkCiclope;
     
+    public void somAndar()
+    {
+        walkCiclope.pitch = Random.Range(0.9f, 1.2f);
+        walkCiclope.Play();
+    }*/
+
     public enum State
     {
         Idle,

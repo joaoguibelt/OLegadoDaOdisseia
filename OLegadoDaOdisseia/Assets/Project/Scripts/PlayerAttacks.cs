@@ -27,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
     //sons
     public AudioSource somCortante;
     public AudioSource somDistancia;
+    //public AudioSource somPerfurante;
+    
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
@@ -67,15 +69,17 @@ public class PlayerAttack : MonoBehaviour
 
     public void RangeAttack()
     {
-        //colocar pra randomizar pitch
-        if (currentAttackType == AttackType.Cortante) //mudar pra switch
-        {
-            float tom = Random.Range(0.9f, 1.2f);
-            somCortante.pitch = tom;
-            somCortante.Play();
-        }
+        //cortante por default para nao dar erro de unasigned, provisório
+        AudioSource currentAttackSound = somCortante;
 
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);
+        /*método bonitinho usando ternário, aplicar qnd tiver som perfurante
+        AudioSource currentAttackSound = somCortante ? currentAttackType == AttackType.Cortante : somPerfurante;*/
+
+        currentAttackSound.pitch = Random.Range(0.9f, 1.2f);
+        currentAttackSound.Play();
+        
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRadius, AttackLayer);      
+
         foreach (Collider2D enemy in enemies)
         {
             if (enemy.tag == "Bot")
@@ -144,6 +148,7 @@ public class PlayerAttack : MonoBehaviour
                 return;
             case 0:
                 Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
+                
                 return;
             case -1:
                 Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);

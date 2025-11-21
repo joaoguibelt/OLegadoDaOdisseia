@@ -3,6 +3,8 @@ using UnityEngine;
 public class EnemyAttacks : MonoBehaviour
 {
     public Animator animator;
+    public AudioSource somParry;
+
 
     //hitbox
     public Transform AttackPoint;
@@ -108,6 +110,11 @@ public class EnemyAttacks : MonoBehaviour
                 return;
             case 0:
                 Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
+                
+                //coloquei o som do parry so no empate para nao ficar muito poluído depois deve sair daqui 
+                somParry.Play();
+                //Debug.Log("PLAYED PARRY");
+
                 return;
             case -1:
                 Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);
