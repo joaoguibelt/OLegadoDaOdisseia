@@ -62,7 +62,7 @@ public class Player2Attack : MonoBehaviour
         }
     }
 
-public void DistantAttack()
+    public void DistantAttack()
     {
         Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
     }
