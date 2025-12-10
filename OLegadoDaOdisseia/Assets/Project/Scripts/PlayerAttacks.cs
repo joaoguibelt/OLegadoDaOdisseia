@@ -112,6 +112,9 @@ public class PlayerAttack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
+
+        // desativa o retorno do parry
+        card.gameObject.SetActive(false);
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
@@ -123,28 +126,28 @@ public class PlayerAttack : MonoBehaviour
 
         else if (myAttack != AttackType.None && opponentattack == AttackType.None)
         {
-            card.enabled = true;
+            card.gameObject.SetActive(true);
             return 1;
         }
         else if (myAttack == AttackType.Distancia && opponentattack == AttackType.Cortante)
         {
             icon1.sprite = dist_icon;
             icon2.sprite = cort_icon;
-            card.enabled = true;
+            card.gameObject.SetActive(true);
             return 1;
         }
         else if (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
         {
             icon1.sprite = cort_icon;
             icon2.sprite = perf_icon;
-            card.enabled = true;
+            card.gameObject.SetActive(true);
             return 1;
         }
         else if (myAttack == AttackType.Perfurante && opponentattack == AttackType.Distancia)
         {
             icon1.sprite = perf_icon;
             icon2.sprite = dist_icon;
-            card.enabled = true;
+            card.gameObject.SetActive(true);
             return 1;
         }
             
