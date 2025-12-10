@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 
 public class PlayerAttack : MonoBehaviour
@@ -28,6 +29,14 @@ public class PlayerAttack : MonoBehaviour
     public AudioSource somCortante;
     public AudioSource somDistancia;
     //public AudioSource somPerfurante;
+
+    // Variaveis do retorno visual do parry
+    [SerializeField] Sprite perf_icon;
+    [SerializeField] Sprite cort_icon;
+    [SerializeField] Sprite dist_icon;
+    public Image icon1;
+    public Image icon2;
+    public Image card;
     
 
     public void AttackCortante(InputAction.CallbackContext context)
@@ -112,14 +121,33 @@ public class PlayerAttack : MonoBehaviour
         if (myAttack == opponentattack)
             return 0;
 
-        if (
-           (myAttack != AttackType.None && opponentattack == AttackType.None)
-        || (myAttack == AttackType.Distancia && opponentattack == AttackType.Cortante)
-        || (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
-        || (myAttack == AttackType.Perfurante && opponentattack == AttackType.Distancia)
-        )
+        else if (myAttack != AttackType.None && opponentattack == AttackType.None)
+        {
+            card.enabled = true;
             return 1;
-
+        }
+        else if (myAttack == AttackType.Distancia && opponentattack == AttackType.Cortante)
+        {
+            icon1.sprite = dist_icon;
+            icon2.sprite = cort_icon;
+            card.enabled = true;
+            return 1;
+        }
+        else if (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
+        {
+            icon1.sprite = cort_icon;
+            icon2.sprite = perf_icon;
+            card.enabled = true;
+            return 1;
+        }
+        else if (myAttack == AttackType.Perfurante && opponentattack == AttackType.Distancia)
+        {
+            icon1.sprite = perf_icon;
+            icon2.sprite = dist_icon;
+            card.enabled = true;
+            return 1;
+        }
+            
         //caso nao entre em nenhuma condicao de vitoria, entao considera derrota
         return -1;
     }
