@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Sumir : MonoBehaviour
 {
     [SerializeField] Image card;
-    private float timer = 3;
+    private float timer = 2.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +22,7 @@ public class Sumir : MonoBehaviour
         if (timer <= 0)
         {
             card.gameObject.SetActive(false);
-            timer = 3;
+            timer = 2.0f;
         }
     }
 }
