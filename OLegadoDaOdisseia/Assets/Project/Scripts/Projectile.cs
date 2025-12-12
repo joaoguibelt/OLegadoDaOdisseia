@@ -20,12 +20,12 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bot")
         {
-            collision.gameObject.GetComponent<EnemyAttacks>().TakeDamage(AttackType.Distancia, damage);
+            collision.gameObject.GetComponent<EnemyAttacks>().TakeDamage(AttackType.Perfurante, damage);
             Destroy(gameObject);
         }
         else if (collision.gameObject.tag == "Player2")
         {
-            collision.gameObject.GetComponent<Player2Attack>().TakeDamage(AttackType.Distancia, damage);
+            collision.gameObject.GetComponent<Player2Attack>().TakeDamage(AttackType.Perfurante, damage);
             Destroy(gameObject);
         }
     }

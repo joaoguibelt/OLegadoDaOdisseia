@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class PlayerAttack : MonoBehaviour
@@ -22,15 +21,11 @@ public class PlayerAttack : MonoBehaviour
     //vida
     [SerializeField] Health hp_script;
 
-    //mov
-    [SerializeField] PlayerMoviment mov_script;
-
     //ataque a distancia
     public GameObject projectilePrefab;
     public Transform projectilePoint;
 
     //sons
-    public AudioSource somParry;
     public AudioSource somCortante;
     public AudioSource somDistancia;
     //public AudioSource somPerfurante;
@@ -42,15 +37,12 @@ public class PlayerAttack : MonoBehaviour
     public Image icon1;
     public Image icon2;
     public Image card;
-
-    [SerializeField] private string Level;
     
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             //roda animacao e seleciona o attacktype
             animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
@@ -61,7 +53,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             animator.SetTrigger("perfurante");
             currentAttackType = AttackType.Perfurante;
         }
@@ -70,7 +61,6 @@ public class PlayerAttack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             if (projectilePoint != null && projectilePoint != null)
             {
                 somDistancia.Play();
@@ -108,7 +98,7 @@ public class PlayerAttack : MonoBehaviour
                 // o parametro do tipo de ataque dado e do dano
                 enemy.gameObject.GetComponent<EnemyAttacks>().TakeDamage(currentAttackType, 1);
             }
-            if (enemy.tag == "Player2")
+            else if (enemy.tag == "Player2")
             {
                 Debug.Log("Cortei o Player2");
                 //pega o script PlayerAttack do que foi atingido na layer e ativa a funcao TakeDamage com
@@ -122,7 +112,6 @@ public class PlayerAttack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
-        mov_script.moveSpeed = 5;
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
@@ -169,7 +158,6 @@ public class PlayerAttack : MonoBehaviour
         if (hp_script.vida_atual <= 0)
         {
             Debug.Log("Player Died");
-            SceneManager.LoadScene(Level);
             return;
         }
 

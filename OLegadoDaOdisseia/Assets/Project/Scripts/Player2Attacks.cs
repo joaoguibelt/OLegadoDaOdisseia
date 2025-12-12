@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 public class Player2Attack : MonoBehaviour
@@ -21,8 +19,6 @@ public class Player2Attack : MonoBehaviour
 
     //vida
     [SerializeField] Health hp_script;
-    // mov
-    [SerializeField] Player2Moviment mov_script;
 
     //ataque a distancia
     public GameObject projectilePrefab;
@@ -34,21 +30,10 @@ public class Player2Attack : MonoBehaviour
     public AudioSource somDistancia;
     //public AudioSource somPerfurante;
 
-    // Variaveis do retorno visual do parry
-    [SerializeField] Sprite perf_icon;
-    [SerializeField] Sprite cort_icon;
-    [SerializeField] Sprite dist_icon;
-    public Image icon1;
-    public Image icon2;
-    public Image card;
-
-    [SerializeField] private string Level;
-
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             //roda animacao e seleciona o attacktype
             animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
@@ -59,7 +44,6 @@ public class Player2Attack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             animator.SetTrigger("perfurante");
             currentAttackType = AttackType.Perfurante;
         }
@@ -68,7 +52,6 @@ public class Player2Attack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
             if (projectilePoint != null && projectilePoint != null)
             {
                 somDistancia.Play();
@@ -109,7 +92,6 @@ public class Player2Attack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
-        mov_script.moveSpeed = 5;
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
@@ -119,32 +101,13 @@ public class Player2Attack : MonoBehaviour
         if (myAttack == opponentattack)
             return 0;
 
-        else if (myAttack != AttackType.None && opponentattack == AttackType.None)
-        {
-            card.gameObject.SetActive(true);
+        if (
+           (myAttack != AttackType.None && opponentattack == AttackType.None)
+        || (myAttack == AttackType.Distancia && opponentattack == AttackType.Cortante)
+        || (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
+        || (myAttack == AttackType.Perfurante && opponentattack == AttackType.Distancia)
+        )
             return 1;
-        }
-        else if (myAttack == AttackType.Distancia && opponentattack == AttackType.Cortante)
-        {
-            icon1.sprite = dist_icon;
-            icon2.sprite = cort_icon;
-            card.gameObject.SetActive(true);
-            return 1;
-        }
-        else if (myAttack == AttackType.Cortante && opponentattack == AttackType.Perfurante)
-        {
-            icon1.sprite = cort_icon;
-            icon2.sprite = perf_icon;
-            card.gameObject.SetActive(true);
-            return 1;
-        }
-        else if (myAttack == AttackType.Perfurante && opponentattack == AttackType.Distancia)
-        {
-            icon1.sprite = perf_icon;
-            icon2.sprite = dist_icon;
-            card.gameObject.SetActive(true);
-            return 1;
-        }
 
         //caso nao entre em nenhuma condicao de vitoria, entao considera derrota
         return -1;
@@ -156,7 +119,6 @@ public class Player2Attack : MonoBehaviour
         if (hp_script.vida_atual <= 0)
         {
             Debug.Log("Player Died");
-            SceneManager.LoadScene(Level);
             return;
         }
 
@@ -172,11 +134,13 @@ public class Player2Attack : MonoBehaviour
             case 1:
                 Debug.Log("GANHEI  " + gameObject.name + "  usou  " + currentAttackType + "  que GANHA de  " + opponentattack);
                 //se eu ganho, entao nao tomo dano, finaliza a funcao
-                somParry.Play();
                 return;
             case 0:
                 Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
+                
                 hp_script.DiminuirVida(damage);
+                //Debug.Log("PLAYED PARRY");
+                
                 return;
             case -1:
                 Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);
