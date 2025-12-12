@@ -48,7 +48,7 @@ public class Player2Attack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
+
             //roda animacao e seleciona o attacktype
             animator.SetTrigger("cortante");
             currentAttackType = AttackType.Cortante;
@@ -59,7 +59,7 @@ public class Player2Attack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
+
             animator.SetTrigger("perfurante");
             currentAttackType = AttackType.Perfurante;
         }
@@ -68,7 +68,7 @@ public class Player2Attack : MonoBehaviour
     {
         if (context.performed)
         {
-            mov_script.moveSpeed = 0;
+
             if (projectilePoint != null && projectilePoint != null)
             {
                 somDistancia.Play();
@@ -109,7 +109,7 @@ public class Player2Attack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
-        mov_script.moveSpeed = 5;
+
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)

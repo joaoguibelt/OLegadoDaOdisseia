@@ -42,9 +42,9 @@ public class EnemyAttacks : MonoBehaviour
 
     public void AttackPerfurante()
     {
-            Debug.Log("Ciclope Perfurante!");
-            animator.SetTrigger("AtkPerfurante");
-            currentAttackType = AttackType.Perfurante;
+        Debug.Log("Ciclope Perfurante!");
+        animator.SetTrigger("AtkPerfurante");
+        currentAttackType = AttackType.Perfurante;
     }
 
     public void AttackDistancia()
