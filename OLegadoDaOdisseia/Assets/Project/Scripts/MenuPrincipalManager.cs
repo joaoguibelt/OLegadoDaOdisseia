@@ -6,6 +6,7 @@ public class MenuPrincipalManager : MonoBehaviour
 {
     [SerializeField] private string Level;
     public GameObject Pause;
+    public GameObject Options;
     public static bool isPaused = false;
 
     public InputActionAsset player1;
@@ -13,7 +14,7 @@ public class MenuPrincipalManager : MonoBehaviour
 
     void Update()
     {
-        if (Pause.activeSelf)
+        if (Pause.activeSelf || Options.activeSelf)
         {
             isPaused = true;
             player1.Disable();

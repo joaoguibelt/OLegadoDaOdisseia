@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 
 public class PlayerAttack : MonoBehaviour
@@ -44,39 +45,41 @@ public class PlayerAttack : MonoBehaviour
     public Image card;
 
     [SerializeField] private string Level;
+    private bool actionOn = false;
     
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
             //roda animacao e seleciona o attacktype
-            animator.SetTrigger("cortante");
-            currentAttackType = AttackType.Cortante;
-
+            if (!actionOn){
+                animator.SetTrigger("cortante");
+                currentAttackType = AttackType.Cortante;
+            }
         }
     }
     public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
-            animator.SetTrigger("perfurante");
-            currentAttackType = AttackType.Perfurante;
+            if (!actionOn){
+                animator.SetTrigger("perfurante");
+                currentAttackType = AttackType.Perfurante;
+            }
         }
     }
     public void AttackDistancia(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
             if (projectilePoint != null && projectilePoint != null)
             {
-                somDistancia.Play();
-                animator.SetTrigger("ranged");
-                currentAttackType = AttackType.Distancia;
-                Debug.Log("Atirou!");
+                if (!actionOn){
+                    somDistancia.Play();
+                    animator.SetTrigger("ranged");
+                    currentAttackType = AttackType.Distancia;
+                }
             }
         }
     }
@@ -122,6 +125,17 @@ public class PlayerAttack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
+    }
+    public void actionStart()
+    {
+        actionOn = true;
+        Debug.Log(actionOn);
+    }
+
+    public void actionEnd()
+    {
+        actionOn = false;
+        Debug.Log(actionOn);
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)

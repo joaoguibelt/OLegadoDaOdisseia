@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -32,29 +33,33 @@ public class EnemyAttacks : MonoBehaviour
     public Image card;
 
     [SerializeField] private string Level;
+    private bool actionOn = false;
 
     public void AttackCortante()
     {
-        Debug.Log("Ciclope Cortante!");
-        animator.SetTrigger("AtkCortante");
-        currentAttackType = AttackType.Cortante;
+        
+        if (!actionOn){
+            animator.SetTrigger("AtkCortante");
+            currentAttackType = AttackType.Cortante;}
     }
 
     public void AttackPerfurante()
     {
-        Debug.Log("Ciclope Perfurante!");
-        animator.SetTrigger("AtkPerfurante");
-        currentAttackType = AttackType.Perfurante;
+        if (!actionOn){
+            animator.SetTrigger("AtkPerfurante");
+            currentAttackType = AttackType.Perfurante;
+        }
     }
 
     public void AttackDistancia()
     {
         if (projectilePoint != null && projectilePoint != null)
         {
-            animator.SetTrigger("AtkDistancia");
-            currentAttackType = AttackType.Distancia;
-            Debug.Log("Ciclope Atirou!");
-
+            
+            if (!actionOn){
+                animator.SetTrigger("AtkDistancia");
+                currentAttackType = AttackType.Distancia;
+                }
         }
     }
 
@@ -78,6 +83,16 @@ public class EnemyAttacks : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
+    }
+    
+    public void actionStart()
+    {
+        actionOn = true;
+    }
+
+    public void actionEnd()
+    {
+        actionOn = false;
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
@@ -123,7 +138,6 @@ public class EnemyAttacks : MonoBehaviour
         //se a vida for igual ou menor que 0, nao continua a funcao e printa Player Died
         if (hp_script.vida_atual <= 0)
         {
-            Debug.Log("Player Died");
             SceneManager.LoadScene(Level);
             return;
         }

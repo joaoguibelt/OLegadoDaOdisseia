@@ -43,38 +43,40 @@ public class Player2Attack : MonoBehaviour
     public Image card;
 
     [SerializeField] private string Level;
+    public bool actionOn = false;
 
     public void AttackCortante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
             //roda animacao e seleciona o attacktype
-            animator.SetTrigger("cortante");
-            currentAttackType = AttackType.Cortante;
-
+            if (!actionOn){
+                animator.SetTrigger("cortante");
+                currentAttackType = AttackType.Cortante;
+            }
         }
     }
     public void AttackPerfurante(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
-            animator.SetTrigger("perfurante");
-            currentAttackType = AttackType.Perfurante;
+            if (!actionOn){
+                animator.SetTrigger("perfurante");
+                currentAttackType = AttackType.Perfurante;
+                }
         }
     }
     public void AttackDistancia(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-
             if (projectilePoint != null && projectilePoint != null)
             {
                 somDistancia.Play();
-                animator.SetTrigger("ranged");
-                currentAttackType = AttackType.Distancia;
-                Debug.Log("Atirou!");
+                if (!actionOn){
+                    animator.SetTrigger("ranged");
+                    currentAttackType = AttackType.Distancia;
+                    }
             }
         }
     }
@@ -82,6 +84,16 @@ public class Player2Attack : MonoBehaviour
     public void DistantAttack()
     {
         Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
+    }
+
+    public void actionStart()
+    {
+        actionOn = true;
+    }
+
+    public void actionEnd()
+    {
+        actionOn = false;
     }
 
     public void RangeAttack()

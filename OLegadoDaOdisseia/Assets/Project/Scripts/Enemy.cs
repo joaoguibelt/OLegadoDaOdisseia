@@ -139,7 +139,7 @@ public class Enemy : MonoBehaviour
             //Debug.Log("primeiro if");
             if ( ran <= 0.3f)
                 scriptEnemyAttack.AttackCortante();
-            else if (ran > 0.3f && ran <= 0.6f)
+            else if (ran > 0.3f && ran <= 0.45f)
                 scriptEnemyAttack.AttackPerfurante();
             else
                 currentState = State.movingOut;
@@ -154,7 +154,6 @@ public class Enemy : MonoBehaviour
             }
             else
                 scriptEnemyAttack.AttackDistancia();
-
         }
 
         //SE ESTIVER MUITO LONGE, ESCOLHE ENTRE CHASING(60%) OU RECUAR(40%)
