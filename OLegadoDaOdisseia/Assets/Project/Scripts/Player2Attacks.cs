@@ -138,8 +138,7 @@ public class Player2Attack : MonoBehaviour
             case 0:
                 Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
                 
-                //coloquei o som do parry so no empate para nao ficar muito poluído depois deve sair daqui 
-                somParry.Play();
+                hp_script.DiminuirVida(damage);
                 //Debug.Log("PLAYED PARRY");
                 
                 return;

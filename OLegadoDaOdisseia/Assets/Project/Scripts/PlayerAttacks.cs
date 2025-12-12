@@ -173,10 +173,11 @@ public class PlayerAttack : MonoBehaviour
             case 1:
                 Debug.Log("GANHEI  " + gameObject.name + "  usou  " + currentAttackType + "  que GANHA de  " + opponentattack);
                 //se eu ganho, entao nao tomo dano, finaliza a funcao
+                somParry.Play();
                 return;
             case 0:
                 Debug.Log("EMPATE  " + gameObject.name + "  usou  " + currentAttackType + "  que EMPATA com  " + opponentattack);
-                
+                hp_script.DiminuirVida(damage);
                 return;
             case -1:
                 Debug.Log("PERDI  " + gameObject.name + "  usou  " + currentAttackType + "  que PERDE de  " + opponentattack);
