@@ -112,9 +112,6 @@ public class PlayerAttack : MonoBehaviour
     {
         //deixa o ataque atual como none (ativada no final da animacao com um "Animation Event")
         currentAttackType = AttackType.None;
-
-        // desativa o retorno do parry
-        card.gameObject.SetActive(false);
     }
 
     private int MyAttackWins(AttackType myAttack, AttackType opponentattack)
