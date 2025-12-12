@@ -135,9 +135,12 @@ public class Enemy : MonoBehaviour
         //SE ESTIVER DENTRO DO RAIO DE ATAQUE MEELE, ESCOLHE ENTRE ATAQUE CORTANTE (70%) OU MOVER PRA TRAS(30%)
         if (PlayerDistance < chaseZone)
         {
+            float ran = UnityEngine.Random.Range(0.0f, 1.0f);
             //Debug.Log("primeiro if");
-            if (UnityEngine.Random.Range(0.0f, 1.0f) <= 0.6f)
+            if ( ran <= 0.3f)
                 scriptEnemyAttack.AttackCortante();
+            else if (ran > 0.3f && ran <= 0.6f)
+                scriptEnemyAttack.AttackPerfurante();
             else
                 currentState = State.movingOut;
         }
@@ -150,7 +153,7 @@ public class Enemy : MonoBehaviour
                 currentState = State.Chasing;
             }
             else
-                scriptEnemyAttack.AttackPerfurante();
+                scriptEnemyAttack.AttackDistancia();
 
         }
 

@@ -28,26 +28,27 @@ public class EnemyAttacks : MonoBehaviour
         currentAttackType = AttackType.Cortante;
     }
 
-    /*
-    public void AttackContundente(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            animator.SetTrigger("AtkCortante");
-            currentAttackType = AttackType.Distancia;
-        }
-    }
-    */
     public void AttackPerfurante()
+    {
+            Debug.Log("Ciclope Perfurante!");
+            animator.SetTrigger("AtkPerfurante");
+            currentAttackType = AttackType.Perfurante;
+    }
+
+    public void AttackDistancia()
     {
         if (projectilePoint != null && projectilePoint != null)
         {
-            animator.SetTrigger("AtkPerfurante");
-            currentAttackType = AttackType.Perfurante;
-            Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
+            animator.SetTrigger("AtkDistancia");
+            currentAttackType = AttackType.Distancia;
             Debug.Log("Ciclope Atirou!");
 
         }
+    }
+
+    public void DistanciaRange()
+    {
+        Instantiate(projectilePrefab, projectilePoint.position, projectilePoint.rotation);
     }
 
     public void CortanteRange()

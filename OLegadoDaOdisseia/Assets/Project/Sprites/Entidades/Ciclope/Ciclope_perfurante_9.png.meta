@@ -106,12 +106,12 @@ TextureImporter:
       name: Ciclope_perfurante_9_0
       rect:
         serializedVersion: 2
-        x: 682
+        x: 0
         y: 0
-        width: 826
-        height: 878
+        width: 2000
+        height: 1300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 6
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b20679126592b1b4295c858642d6f605
     internalID: 0
     vertices: []
     indices: 
